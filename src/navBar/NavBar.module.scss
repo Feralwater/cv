@@ -5,6 +5,11 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: all .5s ease;
 
   &__logo {
     font-size: 30px;
