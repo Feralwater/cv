@@ -6,7 +6,7 @@ const Home = () => {
         <div className={s.home}>
             <div className={s.home__container}>
                 <div><img src="#" alt="avatar"/></div>
-                <div className={s.home__name}>Buyakova Victoria</div>
+                <h1 className={s.home__name}>Buyakova Victoria</h1>
                 <div className={s.home__description}>I'm a Freelancer Front-end React Developer with over
                     6 months of professional experience in this field.
                 </div>
