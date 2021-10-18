@@ -1,0 +1,19 @@
+.button {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  background-color: #eeeeee;
+  padding: 15px;
+  border-radius: 3px;
+  display: inline-block;
+  overflow: hidden;
+  cursor: none;
+
+  &__visible {
+    opacity: 1;
+  }
+
+  &__invisible {
+    opacity: 0;
+  }
+}

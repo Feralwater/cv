@@ -3,14 +3,18 @@ import s from "./App.module.scss"
 import Navbar from "./navBar/Navbar";
 import Home from "./home/Home";
 import Cursor from "./cursor/Cursor";
+import About from "./about/About";
+import ScrollToTop from "./scrollToTop/ScrollToTop";
 
 function App() {
     return (
-        <div className={s.App}>
+        <>
             <Navbar/>
             <Home/>
+            <About/>
             <Cursor/>
-        </div>
+            <ScrollToTop/>
+        </>
     );
 }
 

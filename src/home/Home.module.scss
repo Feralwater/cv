@@ -16,12 +16,21 @@
     padding: 100px 20px;
   }
 
+  &__image {
+    //transform: translate(0, 100px);
+    //opacity: 0;
+    //transition: all 1.2s ease .4s;
+  }
+
   &__name {
     font-size: 55px;
     font-weight: 700;
     margin-bottom: 14px;
     line-height: 1.2;
     color: #ffffff;
+    //transform: translate(0, 100px);
+    //opacity: 0;
+    //transition: all 1.2s ease .4s;
   }
 
   &__description {
@@ -31,6 +40,15 @@
     text-align: center;
     line-height: 1.5;
     font-size: 18px;
+    //transform: translate(0, 100px);
+    //opacity: 0;
+    //transition: all 1.2s ease .4s;
+  }
+
+  &__socialLinks {
+    //transform: translate(0, 100px);
+    //opacity: 0;
+    //transition: all 1.2s ease .4s;
   }
 
   &__button {
@@ -41,9 +59,11 @@
     display: inline-block;
     border: 2px solid #a9afc3;
     padding: 15px 35px;
-    transition: all .3s ease;
     border-radius: 30px;
     margin-top: 35px;
+    //transform: translate(0, 100px);
+    //opacity: 0;
+    //transition: all 1.2s ease .4s;
   }
 
 }
