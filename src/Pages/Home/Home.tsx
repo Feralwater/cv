@@ -13,7 +13,7 @@ const Home = () => {
     const {typedText} = useTypingAnimation( ['Web Developer']);
 
     return (
-        <HomeBlock>
+        <HomeBlock id={'home'}>
             <HomeWrapper>
                 <HomeImage src="../../img/home_photo.jpg" alt=""/>
                 <HomeName>Hello, I`m Buyakova Victoria</HomeName>
