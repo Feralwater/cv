@@ -3,7 +3,7 @@ import Navbar from "./navBar/Navbar";
 import Home from "./Pages/Home/Home";
 import Cursor from "./components/Cursor/Cursor";
 import About from "./Pages/About/About";
-import ScrollToTop from "./scrollToTop/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import {useGlobalTheme} from './hooks/useGlobalTheme';
 import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher';
 import {theme} from './styles/theme';
