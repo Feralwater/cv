@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "./navBar/Navbar";
-import Home from "./home/Home";
+import Home from "./Pages/Home/Home";
 import Cursor from "./cursor/Cursor";
 import About from "./about/About";
 import ScrollToTop from "./scrollToTop/ScrollToTop";
