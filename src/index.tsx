@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import MouseContextProvider from "./context/Mouse-context";
+import { Normalize } from 'styled-normalize'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,6 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <MouseContextProvider>
+      <Normalize />
       <App/>
     </MouseContextProvider>
   </React.StrictMode>
