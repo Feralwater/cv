@@ -1,4 +1,6 @@
-.ring {
+import styled from 'styled-components';
+
+export const Ring = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -11,9 +13,9 @@
   z-index: 999;
   pointer-events: none;
   transition: all .5s ease 0s;
-}
+`;
 
-.dot {
+export const Dot = styled.div`
   position: fixed;
   top: 50%;
   left: 50%;
@@ -24,4 +26,4 @@
   transform: translate(-50%, -50%);
   z-index: 999;
   pointer-events: none;
-}
+`;
