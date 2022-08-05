@@ -1,7 +1,7 @@
-import styled, {keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const HomeBlock = styled.div`
-  background-color: ${props => props.theme.colors.pageBackground};
+  background-color: ${({ theme }) => theme.colors.pageBackground};
   min-height: 100vh;
   width: 100%;
   padding-left: 320px;
@@ -64,4 +64,3 @@ export const HomeButton = styled.a`
   border-radius: 30px;
   margin-top: 35px;
 `;
-

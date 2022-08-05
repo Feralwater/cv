@@ -1,4 +1,4 @@
-import React, {createContext, useState} from "react";
+import React, { createContext, useMemo, useState } from 'react';
 
 interface IContextProps {
     cursorType: string
@@ -6,28 +6,28 @@ interface IContextProps {
 }
 
 export const MouseContext = createContext({
-    cursorType: "",
-    cursorChangeHandler: () => {
-    },
+  cursorType: '',
+  cursorChangeHandler: () => {
+  },
 } as IContextProps);
 
-const MouseContextProvider: React.FC = ({children}) => {
-    const [cursorType, setCursorType] = useState("");
+const MouseContextProvider: React.FC = ({ children }) => {
+  const [cursorType, setCursorType] = useState('');
 
-    const cursorChangeHandler = (cursorType: string) => {
-        setCursorType(cursorType);
-    };
+  const cursorChangeHandler = () => setCursorType(cursorType);
 
-    return (
-        <MouseContext.Provider
-            value={{
-                cursorType,
-                cursorChangeHandler,
-            }}
-        >
-            {children}
-        </MouseContext.Provider>
-    );
+  const memoizeContext = useMemo(() => ({
+    cursorType,
+    cursorChangeHandler,
+  }), [cursorType, cursorChangeHandler]);
+
+  return (
+    <MouseContext.Provider
+      value={memoizeContext}
+    >
+      {children}
+    </MouseContext.Provider>
+  );
 };
 
 export default MouseContextProvider;

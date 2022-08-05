@@ -1,38 +1,39 @@
-import React, {useEffect, useState} from 'react';
-import {IoMdArrowDropup} from "react-icons/all";
-import {ScrollToTopButton} from './ScrollToTop.styles';
+import React, { useEffect, useState } from 'react';
+import { IoMdArrowDropup } from 'react-icons/all';
+import { ScrollToTopButton } from './ScrollToTop.styles';
 
 const ScrollToTop = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(false)
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
-      setIsVisible(true)
+      setIsVisible(true);
     } else {
-      setIsVisible(false)
+      setIsVisible(false);
     }
-  }
+  };
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
-    })
-  }
+      behavior: 'smooth',
+    });
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility)
+    window.addEventListener('scroll', toggleVisibility);
     return () => {
-      window.removeEventListener('scroll', toggleVisibility)
-    }
-  }, [])
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
 
   return (
-    <ScrollToTopButton type="button"
-                       onClick={scrollToTop}
-                       isVisible={isVisible}
+    <ScrollToTopButton
+      type="button"
+      onClick={scrollToTop}
+      isVisible={isVisible}
     >
-      <IoMdArrowDropup aria-hidden="true"/>
+      <IoMdArrowDropup aria-hidden="true" />
     </ScrollToTopButton>
   );
 };

@@ -1,6 +1,5 @@
 import { useCallback, useState } from 'react';
-import {Themes} from '../styles/theme';
-
+import { Themes } from 'styles/theme';
 
 export const useGlobalTheme = () => {
   const [globalTheme, setGlobalTheme] = useState(Themes.light);

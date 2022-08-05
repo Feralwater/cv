@@ -14,5 +14,5 @@ export const ScrollToTopButton = styled.button<IScrollToTopButton>`
   display: inline-block;
   overflow: hidden;
   cursor: none;
-  opacity: ${({isVisible}) => (isVisible ? 1 : 0)};
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
 `;
