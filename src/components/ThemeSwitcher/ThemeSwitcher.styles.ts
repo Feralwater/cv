@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ThemeSwitcherLabel = styled.label`
+  background-color: ${({ theme }) => theme.colors.pageBackground};
   cursor: pointer;
   position: fixed;
   left: 250px;
@@ -12,7 +13,6 @@ export const ThemeSwitcherLabel = styled.label`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,.1);
 `;
 
 export const ThemeSwitcherInput = styled.input`
@@ -40,7 +40,7 @@ export const LightText = styled.i`
   width: 22px;
   height: 22px;
   transition: .3s;
-  color: #000;
+  opacity: ${({ theme }) => (theme.theme === 'light' ? 1 : 0)};
 `;
 
 export const DarkText = styled.i`
@@ -48,12 +48,11 @@ export const DarkText = styled.i`
   width: 22px;
   height: 22px;
   transition: .3s;
-  visibility: hidden;
-  opacity: 0;
-  color: #fff;
+  opacity: ${({ theme }) => (theme.theme === 'dark' ? 1 : 0)};
 `;
 
 export const SwitcherIcon = styled.svg`
   width: 100%;
   height: 100%;
+  fill: ${({ theme }) => theme.colors.themeSwitcherColor};
 `;

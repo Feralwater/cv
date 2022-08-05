@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const NavBar = styled.div`
   width: 320px;
   height: 100vh;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: ${({ theme }) => theme.colors.sidebarBackground};
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -35,11 +34,12 @@ export const LinksWrapper = styled.ul`
 
 export const LinkContainer = styled.li`
   width: 220px;
+  display: flex;
 `;
 
 export const Anchor = styled.a`
   display: inline-block;
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.font};
   text-decoration: none;
   padding: 20px;
   font-weight: 500;
@@ -47,6 +47,7 @@ export const Anchor = styled.a`
 
   & svg {
     margin-right: 20px;
+    fill: ${({ theme }) => theme.colors.font};
   }
 
   &:hover {

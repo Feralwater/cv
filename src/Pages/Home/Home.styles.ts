@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-export const HomeBlock = styled.div`
+export const HomeBlock = styled.section`
   background-color: ${({ theme }) => theme.colors.pageBackground};
   min-height: 100vh;
   width: 100%;
