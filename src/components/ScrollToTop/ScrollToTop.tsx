@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { IoMdArrowDropup } from 'react-icons/all';
+import { IoMdArrowDropup } from 'react-icons/io';
 import { ScrollToTopButton } from './ScrollToTop.styles';
 
 const ScrollToTop = () => {
