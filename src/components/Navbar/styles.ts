@@ -58,7 +58,7 @@ export const Anchor = styled.a`
   }
 `;
 
-export const Contacts = styled.div`
+export const NavbarFooter = styled.footer`
   border-top: 2px solid #5e5e5e;
   padding: 50px;
   display: flex;
