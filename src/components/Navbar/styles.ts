@@ -4,6 +4,7 @@ export const NavBar = styled.div`
   width: 320px;
   height: 100vh;
   background-color: ${({ theme }) => theme.colors.sidebarBackground};
+  color: ${({ theme }) => theme.colors.font};
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -57,7 +58,7 @@ export const Anchor = styled.a`
   }
 `;
 
-export const Contacts = styled.div`
+export const NavbarFooter = styled.footer`
   border-top: 2px solid #5e5e5e;
   padding: 50px;
   display: flex;
