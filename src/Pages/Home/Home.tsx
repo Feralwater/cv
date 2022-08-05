@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <HomeBlock id="home">
       <HomeWrapper>
-        <HomeImage src="../../img/home_photo.jpg" alt="" />
+        <HomeImage src="img/home_photo.jpg" alt="" />
         <HomeName>Hello, I`m Buyakova Victoria</HomeName>
         <BlinkingCursor>{typedText}</BlinkingCursor>
         <HomeDescription>
