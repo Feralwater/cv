@@ -1,7 +1,7 @@
 import styled, {keyframes} from 'styled-components';
 
 export const HomeBlock = styled.div`
-  background-color: #191c26;
+  background-color: ${props => props.theme.colors.pageBackground};
   min-height: 100vh;
   width: 100%;
   padding-left: 320px;
