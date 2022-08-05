@@ -1,10 +1,10 @@
 import React from 'react';
 import { ReactComponent as Portfolio } from 'assets/svg/portfolio.svg';
-import { ReactComponent as Home } from '../../assets/svg/home.svg';
-import { ReactComponent as About } from '../../assets/svg/man.svg';
-import { ReactComponent as Service } from '../../assets/svg/cog.svg';
-import { ReactComponent as Hobbies } from '../../assets/svg/cogsMan.svg';
-import { ReactComponent as Contacts } from '../../assets/svg/contacts.svg';
+import { ReactComponent as Home } from 'assets/svg/home.svg';
+import { ReactComponent as About } from 'assets/svg/man.svg';
+import { ReactComponent as Service } from 'assets/svg/cog.svg';
+import { ReactComponent as Hobbies } from 'assets/svg/cogsMan.svg';
+import { ReactComponent as Contacts } from 'assets/svg/contacts.svg';
 
 export const navbarConstants = [
   {
