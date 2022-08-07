@@ -18,6 +18,7 @@ export const baseTheme = {
     rhino: '#34495e',
     rockBlue: 'rgba(169, 175, 195, 0.3)',
     fantasy: '#f5f5f5',
+    granite: '#7e7e7e',
   },
 
   borders: {

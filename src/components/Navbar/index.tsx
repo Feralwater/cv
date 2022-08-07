@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import {
-  LinksWrapper, NavBar, NavbarLogo, NavbarFooter,
+  LinksWrapper,
+  NavBar,
+  NavbarLogo,
+  NavbarFooter,
+  AuthorAvatar,
+  AuthorName,
+  AuthorEmail, AuthorData,
 } from 'components/Navbar/styles';
 import NavItem from 'components/Navbar/NavItem';
 import { navbarConstants } from 'components/Navbar/constants';
@@ -26,11 +32,11 @@ const Index = () => {
         </LinksWrapper>
       </nav>
       <NavbarFooter>
-        <img src="#" alt="" />
-        <div>
-          <p>Victoria</p>
-          <p>lineviktoriya@gmail.com</p>
-        </div>
+        <AuthorAvatar />
+        <AuthorData>
+          <AuthorName>Victoria</AuthorName>
+          <AuthorEmail href="mailto:lineviktoriya@gmail.com">lineviktoriya@gmail.com</AuthorEmail>
+        </AuthorData>
       </NavbarFooter>
     </NavBar>
   );

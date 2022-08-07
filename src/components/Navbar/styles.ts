@@ -21,6 +21,7 @@ export const NavbarLogo = styled.div`
   padding: 40px;
   border-bottom: ${({ theme }) => theme.borders.navbarBorder};
   box-sizing: border-box;
+  cursor: none;
   
   &:first-letter {
     color: ${({ theme }) => theme.colors.firstLetter};
@@ -39,7 +40,53 @@ export const NavbarFooter = styled.footer`
   border-top: ${({ theme }) => theme.borders.navbarBorder};
   padding: 40px;
   display: flex;
+  gap: 13px;
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
+`;
+
+export const AuthorData = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+export const AuthorAvatar = styled.div`
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: inline-block;
+  background: url("/img/mail_photo.jpg") no-repeat center / cover;
+  border: ${({ theme }) => theme.borders.navbarBorder};
+  filter: grayscale(100%);
+  
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 50px;
+    background-color: ${({ theme }) => theme.colors.black};
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    filter: blur(1px);
+  }
+`;
+
+export const AuthorName = styled.h3`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: ${({ theme }) => theme.colors.font};
+  cursor: none;
+  padding: 0;
+  margin: 0;
+`;
+
+export const AuthorEmail = styled.a`
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all .3s ease;
+  color: ${({ theme }) => theme.colors.granite};
 `;
