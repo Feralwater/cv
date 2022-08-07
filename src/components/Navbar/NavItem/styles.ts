@@ -25,7 +25,7 @@ export const Anchor = styled.a<IAnchor>`
   font-size: 15px;
   font-weight: 500;
   border-radius: 6px;
-  padding: 9px 15px;
+  padding: 13px 15px;
   position: relative;
   transition: all .3s ease;
   width: 100%;

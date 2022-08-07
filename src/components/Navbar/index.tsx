@@ -35,7 +35,7 @@ const Index = () => {
         <AuthorAvatar />
         <AuthorData>
           <AuthorName>Victoria</AuthorName>
-          <AuthorEmail href="mailto:lineviktoriya@gmail.com">lineviktoriya@gmail.com</AuthorEmail>
+          <AuthorEmail href="mailto:lineviktoriya@gmail.com">mail me</AuthorEmail>
         </AuthorData>
       </NavbarFooter>
     </NavBar>

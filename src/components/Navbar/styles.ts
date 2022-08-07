@@ -42,7 +42,6 @@ export const NavbarFooter = styled.footer`
   display: flex;
   gap: 13px;
   align-items: center;
-  justify-content: space-between;
   margin-top: auto;
 `;
 
@@ -60,6 +59,7 @@ export const AuthorAvatar = styled.div`
   background: url("/img/mail_photo.jpg") no-repeat center / cover;
   border: ${({ theme }) => theme.borders.navbarBorder};
   filter: grayscale(100%);
+  flex-shrink: 0;
   
   &::after {
     content: '';
