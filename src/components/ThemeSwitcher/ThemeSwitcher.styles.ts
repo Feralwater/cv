@@ -35,24 +35,24 @@ export const SwitchHandle = styled.div`
   transition: all .3s ease-in-out;
 `;
 
-export const LightText = styled.i`
+export const SwitcherIcon = styled.i`
   position: absolute;
   width: 22px;
   height: 22px;
   transition: .3s;
   opacity: ${({ theme }) => (theme.theme === 'light' ? 1 : 0)};
+
+  & svg {
+    width: 100%;
+    height: 100%;
+    fill: ${({ theme }) => theme.colors.themeSwitcherColor};
+  }
 `;
 
-export const DarkText = styled.i`
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  transition: .3s;
+export const LightText = styled(SwitcherIcon)`
+  opacity: ${({ theme }) => (theme.theme === 'light' ? 1 : 0)};
+`;
+
+export const DarkText = styled(SwitcherIcon)`
   opacity: ${({ theme }) => (theme.theme === 'dark' ? 1 : 0)};
-`;
-
-export const SwitcherIcon = styled.svg`
-  width: 100%;
-  height: 100%;
-  fill: ${({ theme }) => theme.colors.themeSwitcherColor};
 `;
