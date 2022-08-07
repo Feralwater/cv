@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const ThemeSwitcherLabel = styled.label`
-  background-color: ${({ theme }) => theme.colors.pageBackground};
+  background-color: ${({ theme }) => theme.colors.rockBlue};
   cursor: pointer;
   position: fixed;
-  left: 250px;
-  top: 31px;
+  left: 220px;
+  top: 35px;
   z-index: 100;
   width: 50px;
   height: 50px;

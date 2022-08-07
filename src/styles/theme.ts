@@ -13,6 +13,19 @@ export const baseTheme = {
     white: '#fff',
     black: '#000',
     rangoonGreen: '#1a1a1a',
+    iron: '#cbd3d9',
+    horizon: '#527ca6',
+    rhino: '#34495e',
+    rockBlue: 'rgba(169, 175, 195, 0.3)',
+  },
+
+  borders: {
+    rhinoBorder: '1px solid #34495e',
+    ironBorder: '1px solid #cbd3d9',
+  },
+
+  shadows: {
+    shadow: '0 3px 5px rgb(0 0 0 / 10%)',
   },
 
   media: {
@@ -33,6 +46,15 @@ export const LightTheme: DefaultTheme = {
     themeSwitcherColor: `${baseTheme.colors.black}`,
     sidebarBackground: `${baseTheme.colors.white}`,
     font: `${baseTheme.colors.rangoonGreen}`,
+    firstLetter: `${baseTheme.colors.rhino}`,
+  },
+  borders: {
+    ...baseTheme.borders,
+    navbarBorder: `${baseTheme.borders.ironBorder}`,
+  },
+  shadows: {
+    ...baseTheme.shadows,
+    navbarShadow: `${baseTheme.shadows.shadow}`,
   },
 };
 
@@ -46,6 +68,15 @@ export const DarkTheme: DefaultTheme = {
     themeSwitcherColor: `${baseTheme.colors.zircon}`,
     sidebarBackground: `${baseTheme.colors.black}`,
     font: `${baseTheme.colors.white}`,
+    firstLetter: `${baseTheme.colors.horizon}`,
+  },
+  borders: {
+    ...baseTheme.borders,
+    navbarBorder: `${baseTheme.borders.rhinoBorder}`,
+  },
+  shadows: {
+    ...baseTheme.shadows,
+    navbarShadow: 'none',
   },
 };
 

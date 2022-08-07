@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavBar = styled.div`
-  width: 320px;
+  width: 288px;
   height: 100vh;
   background-color: ${({ theme }) => theme.colors.sidebarBackground};
   color: ${({ theme }) => theme.colors.font};
@@ -12,16 +12,18 @@ export const NavBar = styled.div`
   left: 0;
   z-index: 99;
   transition: all .5s ease;
+  box-shadow: ${({ theme }) => theme.shadows.navbarShadow};
 `;
 
 export const NavbarLogo = styled.div`
-  font-size: 30px;
-  font-weight: 700;
-  padding: 50px;
-  border-bottom: 2px solid #5e5e5e;
-
+  font-size: 34px;
+  font-weight: 900;
+  padding: 40px;
+  border-bottom: ${({ theme }) => theme.borders.navbarBorder};
+  box-sizing: border-box;
+  
   &:first-letter {
-    color: #527ca6;
+    color: ${({ theme }) => theme.colors.firstLetter};
     text-decoration: underline;
   }
 `;
@@ -59,11 +61,10 @@ export const Anchor = styled.a`
 `;
 
 export const NavbarFooter = styled.footer`
-  border-top: 2px solid #5e5e5e;
-  padding: 50px;
+  border-top: ${({ theme }) => theme.borders.navbarBorder};
+  padding: 40px;
   display: flex;
   align-items: center;
-  width: 220px;
   justify-content: space-between;
   margin-top: auto;
 `;

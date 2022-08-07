@@ -7,7 +7,7 @@ import { navbarConstants } from 'components/Navbar/constants';
 
 const Index = () => (
   <NavBar>
-    <NavbarLogo>CV</NavbarLogo>
+    <NavbarLogo>Resume</NavbarLogo>
     <nav>
       <LinksWrapper>
         {navbarConstants.map(({ navTo, navIcon, navText }) => (
