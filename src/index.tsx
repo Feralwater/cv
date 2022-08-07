@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Normalize } from 'styled-normalize';
+import { normalize } from 'styled-normalize';
+import { createGlobalStyle } from 'styled-components';
 import App from './App';
 import MouseContextProvider from './context/Mouse-context';
+
+const GlobalStyle = createGlobalStyle`
+  ${normalize}
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+`;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -10,7 +18,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <MouseContextProvider>
-      <Normalize />
+      <GlobalStyle />
       <App />
     </MouseContextProvider>
   </React.StrictMode>,
