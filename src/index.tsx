@@ -7,8 +7,19 @@ import MouseContextProvider from './context/Mouse-context';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: 'Poppins', sans-serif;
+    
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #7e7e7e;
+      border-radius: 6px;
+    }
   }
 `;
 
