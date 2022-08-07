@@ -32,32 +32,7 @@ export const LinksWrapper = styled.ul`
   padding-inline-start: 0;
   list-style-type: none;
   margin: 0;
-  padding: 50px 0 50px 30px;
-`;
-
-export const LinkContainer = styled.li`
-  width: 220px;
-  display: flex;
-`;
-
-export const Anchor = styled.a`
-  display: inline-block;
-  color: ${({ theme }) => theme.colors.font};
-  text-decoration: none;
-  padding: 20px;
-  font-weight: 500;
-  font-size: 18px;
-
-  & svg {
-    margin-right: 20px;
-    fill: ${({ theme }) => theme.colors.font};
-  }
-
-  &:hover {
-    background-color: #191c26;
-    border-radius: 6px;
-    width: 100%;
-  }
+  padding: 60px 40px;
 `;
 
 export const NavbarFooter = styled.footer`
