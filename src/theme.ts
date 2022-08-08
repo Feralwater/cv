@@ -19,11 +19,15 @@ export const baseTheme = {
     rockBlue: 'rgba(169, 175, 195, 0.3)',
     fantasy: '#f5f5f5',
     granite: '#7e7e7e',
+    stormDust: '#666666',
+    aluminium: '#a9afc3',
+    ebony: '#111319',
   },
 
   borders: {
     rhinoBorder: '1px solid #34495e',
     ironBorder: '1px solid #cbd3d9',
+    graniteBorder: '2px solid #7e7e7e',
   },
 
   shadows: {
@@ -50,6 +54,9 @@ export const LightTheme: DefaultTheme = {
     font: `${baseTheme.colors.rangoonGreen}`,
     firstLetter: `${baseTheme.colors.rhino}`,
     activeAnchor: `${baseTheme.colors.fantasy}`,
+    greeting: `${baseTheme.colors.stormDust}`,
+    paragraph: `${baseTheme.colors.granite}`,
+    buttonHoverColor: `${baseTheme.colors.white}`,
   },
   borders: {
     ...baseTheme.borders,
@@ -73,6 +80,9 @@ export const DarkTheme: DefaultTheme = {
     font: `${baseTheme.colors.white}`,
     firstLetter: `${baseTheme.colors.horizon}`,
     activeAnchor: `${baseTheme.colors.mirage}`,
+    greeting: `${baseTheme.colors.white}`,
+    paragraph: `${baseTheme.colors.aluminium}`,
+    buttonHoverColor: `${baseTheme.colors.ebony}`,
   },
   borders: {
     ...baseTheme.borders,
