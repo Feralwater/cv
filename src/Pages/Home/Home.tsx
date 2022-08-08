@@ -27,7 +27,12 @@ const Home = () => {
           over 1 year of professional experience.
         </HomeDescription>
         <div>social links goes here</div>
-        <HomeButton href="#">Download CV</HomeButton>
+        <HomeButton
+          href="CV-Victoria-Buyakova.pdf"
+          download
+        >
+          Download CV
+        </HomeButton>
       </HomeWrapper>
     </HomeBlock>
   );
