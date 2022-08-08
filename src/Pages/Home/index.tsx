@@ -1,5 +1,4 @@
 import React from 'react';
-import useTypingAnimation from '../../hooks/useTypingAnimation';
 import {
   HomeBlock,
   HomeButton,
@@ -8,8 +7,12 @@ import {
   HomeImageWrapper,
   HomeName,
   HomeWrapper,
+  SocialMediaBlock,
   TypedText,
-} from './Home.styles';
+} from 'Pages/Home/styles';
+import SocialMedia from 'Pages/Home/components/SocialMedia';
+import { socialMediaLinks } from 'Pages/Home/components/SocialMedia/constants';
+import useTypingAnimation from '../../hooks/useTypingAnimation';
 
 const Home = () => {
   const { typedText } = useTypingAnimation(['Web Developer', 'I`m building user interfaces']);
@@ -26,7 +29,16 @@ const Home = () => {
           I`m a Front-end React Developer based In Poland,
           over 1 year of professional experience.
         </HomeDescription>
-        <div>social links goes here</div>
+        <SocialMediaBlock>
+          {
+            socialMediaLinks.map(({ icon, link }) => (
+              <SocialMedia
+                link={link}
+                icon={icon}
+              />
+            ))
+          }
+        </SocialMediaBlock>
         <HomeButton
           href="CV-Victoria-Buyakova.pdf"
           download

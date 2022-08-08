@@ -88,3 +88,8 @@ export const HomeButton = styled.a`
     border-color: ${({ theme }) => theme.colors.font};
   }
 `;
+
+export const SocialMediaBlock = styled.ul`
+    margin: 0;
+    list-style: none;
+`;

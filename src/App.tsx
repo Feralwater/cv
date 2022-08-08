@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { useGlobalTheme } from 'hooks/useGlobalTheme';
 import { theme } from 'theme';
 import Navbar from 'components/Navbar';
-import Home from './Pages/Home/Home';
+import Home from './Pages/Home';
 import Cursor from './components/Cursor/Cursor';
 import About from './Pages/About/About';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';

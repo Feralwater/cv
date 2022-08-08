@@ -22,6 +22,7 @@ export const baseTheme = {
     stormDust: '#666666',
     aluminium: '#a9afc3',
     ebony: '#111319',
+    monsoon: '#888888',
   },
 
   borders: {
@@ -57,6 +58,7 @@ export const LightTheme: DefaultTheme = {
     greeting: `${baseTheme.colors.stormDust}`,
     paragraph: `${baseTheme.colors.granite}`,
     buttonHoverColor: `${baseTheme.colors.white}`,
+    socialLinks: `${baseTheme.colors.monsoon}`,
   },
   borders: {
     ...baseTheme.borders,
@@ -83,6 +85,7 @@ export const DarkTheme: DefaultTheme = {
     greeting: `${baseTheme.colors.white}`,
     paragraph: `${baseTheme.colors.aluminium}`,
     buttonHoverColor: `${baseTheme.colors.ebony}`,
+    socialLinks: `${baseTheme.colors.white}`,
   },
   borders: {
     ...baseTheme.borders,
