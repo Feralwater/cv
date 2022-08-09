@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  AboutAuthor,
   AboutBlock,
   AboutContent,
   AboutInfo,
@@ -12,6 +11,7 @@ import {
   RightPart, SeeMoreButton, Skill, SkillLabel, Skills, SkillsBlock,
   SkillsTitle, Years,
 } from 'Pages/About/styles';
+import Paragraph from 'components/Paragraph/Paragraph';
 
 const About = () => (
   <AboutBlock id="about">
@@ -24,18 +24,18 @@ const About = () => (
             {' '}
             <span>Victoria Buyakova</span>
           </Greeting>
-          <AboutAuthor>
-            I`m a Front-end Developer with over 1 year of experience.
+          <Paragraph
+            text="I`m a Front-end Developer with over 1 year of experience.
             My job is  architects and develops websites and applications using web technologies.
-            I like work with new people.
-          </AboutAuthor>
+            I like work with new people."
+          />
         </AboutInfo>
         <AboutSkills>
           <SkillsTitle>What is my primary skills?</SkillsTitle>
           <div>
-            <AboutAuthor>
-              Here is my primary skills and how often I use them.
-            </AboutAuthor>
+            <Paragraph
+              text="Here is my primary skills and how often I use them."
+            />
             <Skills>
               <SkillsBlock>
                 <Skill>

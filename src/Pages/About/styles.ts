@@ -39,12 +39,6 @@ export const Greeting = styled.h3`
   }
 `;
 
-export const AboutAuthor = styled.p`
-  color: ${({ theme }) => theme.colors.paragraph};
-  font-size: 18px;
-  line-height: 1.5;
-`;
-
 export const AboutSkills = styled.div`
   width: 100%;
 `;
