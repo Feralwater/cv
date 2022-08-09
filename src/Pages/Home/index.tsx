@@ -33,6 +33,7 @@ const Home = () => {
           {
             socialMediaLinks.map(({ icon, link }) => (
               <SocialMedia
+                key={link}
                 link={link}
                 icon={icon}
               />
