@@ -4,14 +4,21 @@ import {
   AboutContent,
   AboutInfo,
   AboutSkills,
-  AboutTitle, AuthorExperience, AuthorExperienceInfo, AuthorPicture, Experience,
+  AboutTitle,
+  AuthorExperience,
+  AuthorExperienceInfo,
+  AuthorPicture,
+  Experience,
   Greeting,
-  LeftPart, PictureContainer,
-  ProgressInner,
-  RightPart, SeeMoreButton, Skill, SkillLabel, Skills, SkillsBlock,
+  LeftPart,
+  PictureContainer,
+  SeeMoreButton,
+  Skills,
   SkillsTitle, Years,
 } from 'Pages/About/styles';
 import Paragraph from 'components/Paragraph/Paragraph';
+import { skills } from 'Pages/About/components/Skill/constants';
+import Skill from 'Pages/About/components/Skill';
 
 const About = () => (
   <AboutBlock id="about">
@@ -37,40 +44,15 @@ const About = () => (
               text="Here is my primary skills and how often I use them."
             />
             <Skills>
-              <SkillsBlock>
-                <Skill>
-                  <SkillLabel>Javascript</SkillLabel>
-                  <ProgressInner><div /></ProgressInner>
-                </Skill>
-                <Skill>
-                  <SkillLabel>React.js</SkillLabel>
-                  <ProgressInner><div /></ProgressInner>
-                </Skill>
-                <Skill>
-                  <SkillLabel>Typescript</SkillLabel>
-                  <ProgressInner><div /></ProgressInner>
-                </Skill>
-              </SkillsBlock>
-              <SkillsBlock>
-                <Skill>
-                  <SkillLabel>Redux.js</SkillLabel>
-                  <ProgressInner><div /></ProgressInner>
-                </Skill>
-                <Skill>
-                  <SkillLabel>Css3</SkillLabel>
-                  <ProgressInner><div /></ProgressInner>
-                </Skill>
-                <Skill>
-                  <SkillLabel>GraphQL</SkillLabel>
-                  <ProgressInner><div /></ProgressInner>
-                </Skill>
-              </SkillsBlock>
+              {skills.map((skill) => (
+                <Skill key={skill} skill={skill} />
+              ))}
             </Skills>
           </div>
           <SeeMoreButton type="button">See More</SeeMoreButton>
         </AboutSkills>
       </LeftPart>
-      <RightPart>
+      <div>
         <PictureContainer>
           <AuthorPicture />
           <AuthorExperience>
@@ -80,7 +62,7 @@ const About = () => (
             </AuthorExperienceInfo>
           </AuthorExperience>
         </PictureContainer>
-      </RightPart>
+      </div>
     </AboutContent>
   </AboutBlock>
 );

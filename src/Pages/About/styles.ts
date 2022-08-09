@@ -54,12 +54,13 @@ export const LeftPart = styled.div`
   flex: 0 1 50%;
 `;
 
-export const RightPart = styled.div`
-`;
-
 export const Skills = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  max-height: 250px;
+  flex-wrap: wrap;
+  gap: 40px;
 `;
 
 export const SeeMoreButton = styled.button`
@@ -78,33 +79,6 @@ export const SeeMoreButton = styled.button`
     color: ${({ theme }) => theme.colors.white};
     border-color: ${({ theme }) => theme.colors.font};
   }
-`;
-
-export const SkillsBlock = styled.div`
-  flex: 0 1 50%;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Skill = styled.div`
-  padding: 15px 20px;
-`;
-
-export const SkillLabel = styled.span`
-  font-size: 16px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.colors.font};
-  margin-bottom: 10px;
-  display: inline-block;
-`;
-
-export const ProgressInner = styled.div`
-  width: 100%;
-  min-width: 100%;
-  position: relative;
-  height: 16px;
-  border: ${({ theme }) => theme.borders.progressBorder};
-  padding: 2px;
 `;
 
 export const PictureContainer = styled.div`
