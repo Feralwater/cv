@@ -5,7 +5,7 @@ import { theme } from 'theme';
 import Navbar from 'components/Navbar';
 import Home from './Pages/Home';
 import Cursor from './components/Cursor/Cursor';
-import About from './Pages/About/About';
+import About from './Pages/About';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher';
 

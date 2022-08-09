@@ -1,0 +1,165 @@
+import styled from 'styled-components';
+
+export const AboutBlock = styled.section`
+  background-color: ${({ theme }) => theme.colors.buttonHoverColor};
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 120px 20px 170px 308px;
+`;
+
+export const AboutTitle = styled.h3`
+  color: ${({ theme }) => theme.colors.font};
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+`;
+
+export const AboutContent = styled.div`
+  width: 100%;
+  display: flex;
+  padding-top: 60px;
+  justify-content: space-between;
+`;
+
+export const AboutInfo = styled.div`
+  width: 100%;
+  margin-bottom: 55px;
+`;
+
+export const Greeting = styled.h3`
+  color: ${({ theme }) => theme.colors.font};
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+
+  & span {
+    font-weight: 600;
+  }
+`;
+
+export const AboutAuthor = styled.p`
+  color: ${({ theme }) => theme.colors.paragraph};
+  font-size: 18px;
+  line-height: 1.5;
+`;
+
+export const AboutSkills = styled.div`
+  width: 100%;
+`;
+
+export const SkillsTitle = styled.h3`
+  color: ${({ theme }) => theme.colors.font};
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+`;
+
+export const LeftPart = styled.div`
+  flex: 0 1 50%;
+`;
+
+export const RightPart = styled.div`
+`;
+
+export const Skills = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const SeeMoreButton = styled.button`
+  border-radius: 6px;
+  padding: 13px 30px;
+  background-color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.rangoonGreen};
+  border-color: ${({ theme }) => theme.colors.black};
+  margin: 30px 0 0 20px;
+  font-size: 18px;
+  letter-spacing: .4px;
+  transition: .5s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.white};
+    border-color: ${({ theme }) => theme.colors.font};
+  }
+`;
+
+export const SkillsBlock = styled.div`
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Skill = styled.div`
+  padding: 15px 20px;
+`;
+
+export const SkillLabel = styled.span`
+  font-size: 16px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.colors.font};
+  margin-bottom: 10px;
+  display: inline-block;
+`;
+
+export const ProgressInner = styled.div`
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  height: 16px;
+  border: ${({ theme }) => theme.borders.progressBorder};
+  padding: 2px;
+`;
+
+export const PictureContainer = styled.div`
+  position: relative;
+  width: 410px;
+  height: 550px;
+  box-sizing: border-box;
+`;
+
+export const AuthorPicture = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background: url("/img/photo_author.jpg") center/cover no-repeat;
+  filter: grayscale(85%);
+`;
+
+export const AuthorExperience = styled.div`
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: ${({ theme }) => theme.colors.rhino};
+  bottom: -50px;
+  left: -50px;
+`;
+
+export const AuthorExperienceInfo = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+`;
+
+export const Years = styled.h3`
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+`;
+
+export const Experience = styled.span`
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 19px;
+  font-weight: 500;
+`;

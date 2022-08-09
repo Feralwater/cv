@@ -4,7 +4,7 @@ export const HomeBlock = styled.section`
   background-color: ${({ theme }) => theme.colors.pageBackground};
   min-height: 100vh;
   width: 100%;
-  padding-left: 320px;
+  padding-left: 288px;
   display: flex;
   align-items: center;
   justify-content: center;
