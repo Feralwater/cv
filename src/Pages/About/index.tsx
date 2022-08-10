@@ -4,7 +4,6 @@ import {
   AboutContent,
   AboutInfo,
   AboutSkills,
-  AboutTitle,
   AuthorExperience,
   AuthorExperienceInfo,
   AuthorPicture,
@@ -14,15 +13,17 @@ import {
   PictureContainer,
   SeeMoreButton,
   Skills,
-  SkillsTitle, Years,
+  SkillsTitle,
+  Years,
 } from 'Pages/About/styles';
 import Paragraph from 'components/Paragraph/Paragraph';
 import { skills } from 'Pages/About/components/Skill/constants';
 import Skill from 'Pages/About/components/Skill';
+import { H3 } from 'topography';
 
 const About = () => (
   <AboutBlock id="about">
-    <AboutTitle>About Me</AboutTitle>
+    <H3>About Me</H3>
     <AboutContent>
       <LeftPart>
         <AboutInfo>

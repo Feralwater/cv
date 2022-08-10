@@ -8,14 +8,6 @@ export const AboutBlock = styled.section`
   padding: 120px 20px 170px 308px;
 `;
 
-export const AboutTitle = styled.h3`
-  color: ${({ theme }) => theme.colors.font};
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1;
-  margin: 0;
-`;
-
 export const AboutContent = styled.div`
   width: 100%;
   display: flex;
