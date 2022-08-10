@@ -24,6 +24,8 @@ export const baseTheme = {
     ebony: '#111319',
     monsoon: '#888888',
     davyGrey: '#555555',
+    overlay: 'rgba(0, 0, 0, 0.85)',
+    cinder: '#12161f',
   },
 
   borders: {
@@ -32,6 +34,7 @@ export const baseTheme = {
     graniteBorder: '2px solid #7e7e7e',
     thinGraniteBorder: '1px solid #7e7e7e',
     davyGreyBorder: '1px solid #555555',
+    whiteBorder: '3px solid #ffffff',
   },
 
   shadows: {
@@ -62,6 +65,7 @@ export const LightTheme: DefaultTheme = {
     paragraph: `${baseTheme.colors.granite}`,
     buttonHoverColor: `${baseTheme.colors.white}`,
     socialLinks: `${baseTheme.colors.monsoon}`,
+    modalBackground: `${baseTheme.colors.white}`,
   },
   borders: {
     ...baseTheme.borders,
@@ -90,6 +94,7 @@ export const DarkTheme: DefaultTheme = {
     paragraph: `${baseTheme.colors.aluminium}`,
     buttonHoverColor: `${baseTheme.colors.ebony}`,
     socialLinks: `${baseTheme.colors.white}`,
+    modalBackground: `${baseTheme.colors.cinder}`,
   },
   borders: {
     ...baseTheme.borders,

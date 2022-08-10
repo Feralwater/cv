@@ -61,7 +61,7 @@ export const SeeMoreButton = styled.button`
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.rangoonGreen};
   border-color: ${({ theme }) => theme.colors.black};
-  margin: 30px 0 0 20px;
+  margin: 30px 0 0 0;
   font-size: 18px;
   letter-spacing: .4px;
   transition: .5s;
