@@ -11,7 +11,6 @@ import {
   Greeting,
   LeftPart,
   PictureContainer,
-  SeeMoreButton,
   Skills,
   SkillsTitle,
   Years,
@@ -21,6 +20,7 @@ import { skills } from 'Pages/About/components/Skill/constants';
 import Skill from 'Pages/About/components/Skill';
 import { H3 } from 'topography';
 import Modal from 'components/Modal';
+import Button from 'components/Button';
 
 const About = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -55,12 +55,9 @@ const About = () => {
                 ))}
               </Skills>
             </div>
-            <SeeMoreButton
-              type="button"
-              onClick={openModal}
-            >
+            <Button onClick={openModal} type="button">
               See More
-            </SeeMoreButton>
+            </Button>
           </AboutSkills>
         </LeftPart>
         <div>
