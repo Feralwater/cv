@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const StyledForm = styled.form`
   background-color: ${({ theme }) => theme.colors.buttonHoverColor};
-  padding: 50px 45px 55px;
+  padding: 30px 45px 55px 45px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 25px;
 `;
 
 export const Title = styled.h3`
@@ -28,9 +28,20 @@ export const Textarea = styled.textarea`
   color: ${({ theme }) => theme.colors.granite};
   font-weight: 500;
   resize: none;
-
+  box-sizing: border-box;
+  line-height: 1.4;
+  padding: 10px 10px 10px 2px;
+  
   &:focus {
     border-bottom-color: ${({ theme }) => theme.colors.midnight};
     outline: none;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+   
+  & button {
+    padding: 11px 33px;
   }
 `;
