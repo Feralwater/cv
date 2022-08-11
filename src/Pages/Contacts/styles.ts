@@ -23,17 +23,9 @@ export const SubInfo = styled.div`
 export const MailAuthor = styled.div`
   display: flex;
   width: 100%;
+  gap: 60px;
 `;
 
 export const MailMe = styled.div`
-  flex: 1 0 50%;
-`;
-
-export const Map = styled.div`
-  flex: 1 0 50%;
-  
-  & iframe {
-    border: ${({ theme }) => theme.borders.mapBorder};
-    filter: ${({ theme }) => (theme.theme === 'light' ? 'grayscale(1)' : 'invert(1)')};
-  }
+  flex: 1 1 50%;
 `;

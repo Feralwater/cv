@@ -1,11 +1,13 @@
 import React from 'react';
 import {
-  ContactCards, ContactsBlock, MailAuthor, MailMe, Map, SubInfo,
+  ContactCards, ContactsBlock, MailAuthor, MailMe, SubInfo,
 } from 'Pages/Contacts/styles';
 import { H3 } from 'topography';
 import Paragraph from 'components/Paragraph/Paragraph';
 import { CONTACTS } from 'Pages/Contacts/constants';
 import ContactCard from 'Pages/Contacts/components/ContactCard';
+import GoogleMap from 'Pages/Contacts/components/GoogleMap';
+import Form from 'Pages/Contacts/components/Form';
 
 const Contacts = () => (
   <ContactsBlock id="contacts">
@@ -13,7 +15,7 @@ const Contacts = () => (
     <SubInfo>
       <Paragraph
         text="Please contact me in any way that is convenient for you:
-      email, phone, social media, or fill out the form below."
+        email, phone, social media, or fill out the form below."
       />
     </SubInfo>
     <ContactCards>
@@ -22,18 +24,9 @@ const Contacts = () => (
     </ContactCards>
     <MailAuthor>
       <MailMe>
-        Form goes here
+        <Form />
       </MailMe>
-      <Map>
-        <iframe
-          width="100%"
-          height="350"
-          title="Google Maps"
-          src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=43b%20Tsintsadze%20street%20Georgia%20Tbilisi+(I%20am%20here)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        >
-          <a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a>
-        </iframe>
-      </Map>
+      <GoogleMap />
     </MailAuthor>
   </ContactsBlock>
 );
