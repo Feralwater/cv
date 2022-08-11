@@ -19,3 +19,21 @@ export const ContactCards = styled.div`
 export const SubInfo = styled.div`
   max-width: 50%;
 `;
+
+export const MailAuthor = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+export const MailMe = styled.div`
+  flex: 1 0 50%;
+`;
+
+export const Map = styled.div`
+  flex: 1 0 50%;
+  
+  & iframe {
+    border: ${({ theme }) => theme.borders.mapBorder};
+    filter: ${({ theme }) => (theme.theme === 'light' ? 'grayscale(1)' : 'invert(1)')};
+  }
+`;

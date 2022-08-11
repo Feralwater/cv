@@ -35,6 +35,7 @@ export const baseTheme = {
     thinGraniteBorder: '1px solid #7e7e7e',
     davyGreyBorder: '1px solid #555555',
     whiteBorder: '3px solid #ffffff',
+    mapBorder: '5px solid #ffffff',
   },
 
   shadows: {
