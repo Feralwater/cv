@@ -27,6 +27,7 @@ export const baseTheme = {
     overlay: 'rgba(0, 0, 0, 0.85)',
     cinder: '#12161f',
     midnight: '#0f172a',
+    red: '#ff0000',
   },
 
   borders: {

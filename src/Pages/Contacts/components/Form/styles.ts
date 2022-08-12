@@ -45,3 +45,14 @@ export const ButtonContainer = styled.div`
     padding: 11px 33px;
   }
 `;
+
+export const ErrorMessage = styled.span`
+  display: inline-block;
+  font-size: 15px;
+  color: ${({ theme }) => theme.colors.red};
+  padding: 5px 0 0 0;
+  
+  &:first-letter {
+    text-transform: uppercase;
+  }
+`;
