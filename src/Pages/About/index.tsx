@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import {
   AboutBlock,
   AboutContent,
@@ -23,8 +23,8 @@ import Modal from 'components/Modal';
 import Button from 'components/Button';
 
 const About = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => setIsModalOpen(true);
+  const modal = useRef<{open:()=>void}>(null);
+  const openModalHandler = () => modal.current?.open();
 
   return (
     <AboutBlock id="about">
@@ -55,7 +55,7 @@ const About = () => {
                 ))}
               </Skills>
             </div>
-            <Button onClick={openModal} type="button">
+            <Button onClick={openModalHandler} type="button">
               See More
             </Button>
           </AboutSkills>
@@ -72,10 +72,7 @@ const About = () => {
           </PictureContainer>
         </div>
       </AboutContent>
-      <Modal
-        open={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      >
+      <Modal ref={modal}>
         Modal
       </Modal>
     </AboutBlock>

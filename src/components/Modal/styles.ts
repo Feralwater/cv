@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-interface IModal {
-  isOpen: boolean
-}
-
-export const Overlay = styled.div<IModal>`
+export const Overlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -12,8 +8,6 @@ export const Overlay = styled.div<IModal>`
   bottom: 0;
   background-color: ${({ theme }) => theme.colors.overlay};
   z-index: 1000;
-  // opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
-  // transition: all .3s ease;
 `;
 
 export const ModalContent = styled.div`
