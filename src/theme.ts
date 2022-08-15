@@ -30,10 +30,14 @@ export const baseTheme = {
     red: '#ff0000',
     gainsboro: '#dddddd',
     boulder: '#777777',
+    dune: '#333333',
+    amour: '#eeeeee',
+    gravel: '#444444',
   },
 
   borders: {
     rhinoBorder: '1px solid #34495e',
+    gainsboroBorder: '1px solid #dddddd',
     ironBorder: '1px solid #cbd3d9',
     graniteBorder: '2px solid #7e7e7e',
     thinGraniteBorder: '1px solid #7e7e7e',
@@ -72,11 +76,15 @@ export const LightTheme: DefaultTheme = {
     socialLinks: `${baseTheme.colors.monsoon}`,
     modalBackground: `${baseTheme.colors.white}`,
     popupItem: `${baseTheme.colors.rhino}`,
+    time: `${baseTheme.colors.dune}`,
+    timeBackground: `${baseTheme.colors.amour}`,
+    symbol: `${baseTheme.colors.gravel}`,
   },
   borders: {
     ...baseTheme.borders,
     navbarBorder: `${baseTheme.borders.ironBorder}`,
     progressBorder: `${baseTheme.borders.graniteBorder}`,
+    listBorder: `${baseTheme.borders.gainsboroBorder}`,
   },
   shadows: {
     ...baseTheme.shadows,
@@ -102,11 +110,15 @@ export const DarkTheme: DefaultTheme = {
     socialLinks: `${baseTheme.colors.white}`,
     modalBackground: `${baseTheme.colors.cinder}`,
     popupItem: `${baseTheme.colors.white}`,
+    time: `${baseTheme.colors.white}`,
+    timeBackground: `${baseTheme.colors.rhino}`,
+    symbol: `${baseTheme.colors.amour}`,
   },
   borders: {
     ...baseTheme.borders,
     navbarBorder: `${baseTheme.borders.rhinoBorder}`,
     progressBorder: `${baseTheme.borders.davyGreyBorder}`,
+    listBorder: `${baseTheme.borders.rhinoBorder}`,
   },
   shadows: {
     ...baseTheme.shadows,

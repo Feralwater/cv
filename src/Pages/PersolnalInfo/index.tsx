@@ -1,22 +1,17 @@
 import React from 'react';
 import {
   ButtonWrapper,
-  Column, DownloadButton,
-  ExperienceItem,
-  ExperienceList,
-  Icon,
-  JobDescription,
-  JobPlace,
-  JobTitle,
+  Column,
+  DownloadButton,
   Popup,
   PopupHeader,
   PopupRow,
-  Time,
 } from 'Pages/PersolnalInfo/styles';
-import { FiBookOpen, FiBriefcase } from 'react-icons/fi';
 import AboutList from 'Pages/PersolnalInfo/components/AboutList';
 import { HiOutlineArrowDown } from 'react-icons/hi';
 import AchievementList from 'Pages/PersolnalInfo/components/AchievementList';
+import List from 'Pages/PersolnalInfo/components/List';
+import { EDUCATION, EXPERIENCE } from 'Pages/PersolnalInfo/constants';
 
 const PersonalInfo = () => (
   <Popup>
@@ -42,79 +37,11 @@ const PersonalInfo = () => (
     <PopupRow>
       <Column>
         <PopupHeader>Experience</PopupHeader>
-        <ExperienceList>
-          <ExperienceItem>
-            <Icon><FiBriefcase /></Icon>
-            <Time>2018</Time>
-            <JobTitle>
-              nnnnnnnnn
-              <JobPlace>
-                jxvn kxjv
-              </JobPlace>
-              <JobDescription>jvnkxj</JobDescription>
-            </JobTitle>
-          </ExperienceItem>
-          <ExperienceItem>
-            <Icon><FiBriefcase /></Icon>
-            <Time>2018</Time>
-            <JobTitle>
-              nnnnnnnnn
-              <JobPlace>
-                jxvn kxjv
-              </JobPlace>
-              <JobDescription>jvnkxj</JobDescription>
-            </JobTitle>
-          </ExperienceItem>
-          <ExperienceItem>
-            <Icon><FiBriefcase /></Icon>
-            <Time>2018</Time>
-            <JobTitle>
-              nnnnnnnnn
-              <JobPlace>
-                jxvn kxjv
-              </JobPlace>
-              <JobDescription>jvnkxj</JobDescription>
-            </JobTitle>
-          </ExperienceItem>
-        </ExperienceList>
+        <List list={EXPERIENCE} />
       </Column>
       <Column>
         <PopupHeader>Education</PopupHeader>
-        <ExperienceList>
-          <ExperienceItem>
-            <Icon><FiBookOpen /></Icon>
-            <Time>2018</Time>
-            <JobTitle>
-              nnnnnnnnn
-              <JobPlace>
-                jxvn kxjv
-              </JobPlace>
-              <JobDescription>jvnkxj</JobDescription>
-            </JobTitle>
-          </ExperienceItem>
-          <ExperienceItem>
-            <Icon><FiBookOpen /></Icon>
-            <Time>2018</Time>
-            <JobTitle>
-              nnnnnnnnn
-              <JobPlace>
-                jxvn kxjv
-              </JobPlace>
-              <JobDescription>jvnkxj</JobDescription>
-            </JobTitle>
-          </ExperienceItem>
-          <ExperienceItem>
-            <Icon><FiBookOpen /></Icon>
-            <Time>2018</Time>
-            <JobTitle>
-              nnnnnnnnn
-              <JobPlace>
-                jxvn kxjv
-              </JobPlace>
-              <JobDescription>jvnkxj</JobDescription>
-            </JobTitle>
-          </ExperienceItem>
-        </ExperienceList>
+        <List list={EDUCATION} />
       </Column>
     </PopupRow>
   </Popup>
