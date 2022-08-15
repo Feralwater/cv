@@ -164,3 +164,23 @@ export const JobDescription = styled.p`
   font-size: 15px;
   line-height: 27px;
 `;
+
+export const DownloadButton = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.font};
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  border: ${({ theme }) => theme.borders.graniteBorder};
+  padding: 15px 35px;
+  border-radius: 30px;
+  margin-top: 12px;
+  gap: 10px;
+  
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.font};
+    color: ${({ theme }) => theme.colors.buttonHoverColor};
+    border-color: ${({ theme }) => theme.colors.font};
+  }
+`;

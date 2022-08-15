@@ -6,7 +6,7 @@ import {
   AchievementTitle,
   AchievementWrapper,
   ButtonWrapper,
-  Column,
+  Column, DownloadButton,
   ExperienceItem,
   ExperienceList,
   Icon,
@@ -18,9 +18,9 @@ import {
   PopupRow,
   Time,
 } from 'Pages/PersolnalInfo/styles';
-import { HomeButton } from 'Pages/Home/styles';
 import { FiBookOpen, FiBriefcase } from 'react-icons/fi';
 import AboutList from 'Pages/PersolnalInfo/components/AboutList';
+import { HiOutlineArrowDown } from 'react-icons/hi';
 
 const PersonalInfo = () => (
   <Popup>
@@ -29,12 +29,13 @@ const PersonalInfo = () => (
         <PopupHeader>Personal Info</PopupHeader>
         <AboutList />
         <ButtonWrapper>
-          <HomeButton
-            href="CV-Victoria-Buyakova.pdf"
+          <DownloadButton
+            href="ITRex Group - CV.pdf"
             download
           >
-            Download CV
-          </HomeButton>
+            <span>ITRex Group - CV</span>
+            <HiOutlineArrowDown />
+          </DownloadButton>
         </ButtonWrapper>
       </Column>
       <Column>
