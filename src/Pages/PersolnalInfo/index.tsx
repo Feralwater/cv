@@ -1,10 +1,5 @@
 import React from 'react';
 import {
-  Achievement,
-  AchievementDescription,
-  AchievementRow,
-  AchievementTitle,
-  AchievementWrapper,
   ButtonWrapper,
   Column, DownloadButton,
   ExperienceItem,
@@ -21,6 +16,7 @@ import {
 import { FiBookOpen, FiBriefcase } from 'react-icons/fi';
 import AboutList from 'Pages/PersolnalInfo/components/AboutList';
 import { HiOutlineArrowDown } from 'react-icons/hi';
+import AchievementList from 'Pages/PersolnalInfo/components/AchievementList';
 
 const PersonalInfo = () => (
   <Popup>
@@ -40,28 +36,7 @@ const PersonalInfo = () => (
       </Column>
       <Column>
         <PopupHeader>Achievements</PopupHeader>
-        <AchievementRow>
-          <AchievementWrapper>
-            <Achievement>
-              <AchievementTitle>01</AchievementTitle>
-              <AchievementDescription>years of Experience</AchievementDescription>
-            </Achievement>
-            <Achievement>
-              <AchievementTitle>10</AchievementTitle>
-              <AchievementDescription>Completed Projects</AchievementDescription>
-            </Achievement>
-          </AchievementWrapper>
-          <AchievementWrapper>
-            <Achievement>
-              <AchievementTitle>15</AchievementTitle>
-              <AchievementDescription>Completed Courses</AchievementDescription>
-            </Achievement>
-            <Achievement>
-              <AchievementTitle>20</AchievementTitle>
-              <AchievementDescription>years of Experience</AchievementDescription>
-            </Achievement>
-          </AchievementWrapper>
-        </AchievementRow>
+        <AchievementList />
       </Column>
     </PopupRow>
     <PopupRow>

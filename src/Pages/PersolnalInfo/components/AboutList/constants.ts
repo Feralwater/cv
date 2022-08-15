@@ -1,4 +1,4 @@
-export const info = [
+export const INFO = [
   {
     title: 'First name: ',
     value: 'Victoria',
