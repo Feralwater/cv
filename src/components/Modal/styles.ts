@@ -19,9 +19,19 @@ export const ModalContent = styled.div`
   z-index: 1000;
   background-color: ${({ theme }) => theme.colors.modalBackground};
   border: none;
-  overflow: initial;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   border-radius: 4px;
   outline: none;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #7e7e7e;
+    border-radius: 6px;
+  }
 `;
 
 export const CloseButton = styled.button`

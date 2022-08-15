@@ -21,6 +21,7 @@ import Skill from 'Pages/About/components/Skill';
 import { H3 } from 'topography';
 import Modal from 'components/Modal';
 import Button from 'components/Button';
+import PersonalInfo from 'Pages/PersolnalInfo';
 
 const About = () => {
   const modal = useRef<{open:()=>void}>(null);
@@ -73,7 +74,7 @@ const About = () => {
         </div>
       </AboutContent>
       <Modal ref={modal}>
-        Modal
+        <PersonalInfo />
       </Modal>
     </AboutBlock>
   );

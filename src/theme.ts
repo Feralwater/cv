@@ -28,6 +28,8 @@ export const baseTheme = {
     cinder: '#12161f',
     midnight: '#0f172a',
     red: '#ff0000',
+    gainsboro: '#dddddd',
+    boulder: '#777777',
   },
 
   borders: {
@@ -69,6 +71,7 @@ export const LightTheme: DefaultTheme = {
     buttonHoverColor: `${baseTheme.colors.white}`,
     socialLinks: `${baseTheme.colors.monsoon}`,
     modalBackground: `${baseTheme.colors.white}`,
+    popupItem: `${baseTheme.colors.rhino}`,
   },
   borders: {
     ...baseTheme.borders,
@@ -98,6 +101,7 @@ export const DarkTheme: DefaultTheme = {
     buttonHoverColor: `${baseTheme.colors.ebony}`,
     socialLinks: `${baseTheme.colors.white}`,
     modalBackground: `${baseTheme.colors.cinder}`,
+    popupItem: `${baseTheme.colors.white}`,
   },
   borders: {
     ...baseTheme.borders,
