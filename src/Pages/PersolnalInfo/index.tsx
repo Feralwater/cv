@@ -21,7 +21,7 @@ const PersonalInfo = () => (
         <AboutList />
         <ButtonWrapper>
           <DownloadButton
-            href="ITRex-Group-CV.pdf"
+            href="CV2.pdf"
             download
           >
             <span>ITRex Group - CV</span>

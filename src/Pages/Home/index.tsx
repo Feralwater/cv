@@ -41,7 +41,7 @@ const Home = () => {
           }
         </SocialMediaBlock>
         <HomeButton
-          href="CV-Victoria-Buyakova.pdf"
+          href="CV1.pdf"
           download
         >
           Download CV
