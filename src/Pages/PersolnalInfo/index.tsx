@@ -1,68 +1,33 @@
 import React from 'react';
 import {
-  AboutItem,
-  AboutList,
-  AboutTitle,
-  AboutValue,
-  Achievement, AchievementDescription, AchievementRow,
+  Achievement,
+  AchievementDescription,
+  AchievementRow,
   AchievementTitle,
   AchievementWrapper,
   ButtonWrapper,
-  Column, ExperienceItem, ExperienceList, Icon, JobDescription, JobPlace, JobTitle,
+  Column,
+  ExperienceItem,
+  ExperienceList,
+  Icon,
+  JobDescription,
+  JobPlace,
+  JobTitle,
   Popup,
   PopupHeader,
-  PopupRow, Time,
+  PopupRow,
+  Time,
 } from 'Pages/PersolnalInfo/styles';
 import { HomeButton } from 'Pages/Home/styles';
 import { FiBookOpen, FiBriefcase } from 'react-icons/fi';
+import AboutList from 'Pages/PersolnalInfo/components/AboutList';
 
 const PersonalInfo = () => (
   <Popup>
     <PopupRow>
       <Column>
         <PopupHeader>Personal Info</PopupHeader>
-        <AboutList>
-          <AboutItem>
-            <AboutTitle>First name:</AboutTitle>
-            <AboutValue>Victoria</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Last name:</AboutTitle>
-            <AboutValue>Buyakova</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Age:</AboutTitle>
-            <AboutValue>29 Years</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Nationality:</AboutTitle>
-            <AboutValue>Belarus</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Work format:</AboutTitle>
-            <AboutValue>?</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Address:</AboutTitle>
-            <AboutValue>Tbilisi</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Phone:</AboutTitle>
-            <AboutValue>+995591920551</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Email:</AboutTitle>
-            <AboutValue>lineviktoriya@gmail.com</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Skype:</AboutTitle>
-            <AboutValue>hcghcb</AboutValue>
-          </AboutItem>
-          <AboutItem>
-            <AboutTitle>Languages:</AboutTitle>
-            <AboutValue>English, Russian, Polish</AboutValue>
-          </AboutItem>
-        </AboutList>
+        <AboutList />
         <ButtonWrapper>
           <HomeButton
             href="CV-Victoria-Buyakova.pdf"

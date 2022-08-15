@@ -19,31 +19,7 @@ export const PopupHeader = styled.h3`
   border-bottom: 2px dashed ${({ theme }) => theme.colors.gainsboro};
   padding-bottom: 10px;
   display: inline-block;
-  color: ${({ theme }) => theme.colors.rangoonGreen};
-`;
-
-export const AboutList = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  list-style: none;
-`;
-
-export const AboutItem = styled.li`
-  flex: 0 0 50%;
-  max-width: 50%;
-  font-size: 16px;
-  padding-bottom: 20px;
-`;
-
-export const AboutTitle = styled.span`
-  opacity: .8;
-  text-transform: capitalize;
-`;
-
-export const AboutValue = styled.span`
-  font-weight: 500;
-  color: ${({ theme }) => theme.colors.popupItem};
+  color: ${({ theme }) => theme.colors.font};
 `;
 
 export const ButtonWrapper = styled.div`
