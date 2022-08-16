@@ -67,7 +67,7 @@ const Form = () => {
   return (
     <StyledForm>
       <div>
-        <Paragraph text="I`m always open to discussing product" />
+        <Paragraph>I`m always open to discussing product</Paragraph>
         <Title>Fell free to email me</Title>
       </div>
       <div>

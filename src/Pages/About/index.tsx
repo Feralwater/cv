@@ -38,18 +38,18 @@ const About = () => {
               {' '}
               <span>Victoria Buyakova</span>
             </Greeting>
-            <Paragraph
-              text="I`m a Front-end Developer with over 1 year of experience.
+            <Paragraph>
+              I`m a Front-end Developer with over 1 year of experience.
               My job is  architects and develops websites and applications using web technologies.
-              I like work with new people."
-            />
+              I like work with new people.
+            </Paragraph>
           </AboutInfo>
           <AboutSkills>
             <SkillsTitle>What is my primary skills?</SkillsTitle>
             <div>
-              <Paragraph
-                text="Here is my primary skills and how often I use them."
-              />
+              <Paragraph>
+                Here is my primary skills and how often I use them.
+              </Paragraph>
               <Skills>
                 {skills.map((skill) => (
                   <Skill key={skill} skill={skill} />

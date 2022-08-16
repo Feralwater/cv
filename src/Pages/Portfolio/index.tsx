@@ -8,7 +8,10 @@ const Portfolio = () => (
   <PortfolioBlock id="portfolio">
     <div>
       <H3>Portfolio</H3>
-      <Paragraph text="Here is my open-source projects. You can find code on my github" />
+      <Paragraph>
+        Here is my open-source projects. You can find code on my
+        <a href="https://github.com/Feralwater">github</a>
+      </Paragraph>
     </div>
     <div>
       <PortfolioSwiper />

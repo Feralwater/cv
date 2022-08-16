@@ -1,14 +1,14 @@
-import React from 'react';
-import { AboutAuthor } from 'components/Paragraph/styles';
+import React, { ReactNode } from 'react';
+import { StyledParagraph } from 'components/Paragraph/styles';
 
 interface IParagraph {
-  text: string;
+  children: ReactNode;
 }
 
-const Paragraph = ({ text }:IParagraph) => (
-  <AboutAuthor>
-    {text}
-  </AboutAuthor>
+const Paragraph = ({ children }:IParagraph) => (
+  <StyledParagraph>
+    {children}
+  </StyledParagraph>
 );
 
 export default Paragraph;
