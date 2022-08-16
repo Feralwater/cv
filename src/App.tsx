@@ -4,6 +4,8 @@ import { useGlobalTheme } from 'hooks/useGlobalTheme';
 import { theme } from 'theme';
 import Navbar from 'components/Navbar';
 import Contacts from 'Pages/Contacts';
+import Portfolio from 'Pages/Portfolio';
+import Service from 'Pages/Service';
 import Home from './Pages/Home';
 import Cursor from './components/Cursor/Cursor';
 import About from './Pages/About';
@@ -18,8 +20,10 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Cursor />
+      <Service />
+      <Portfolio />
       <Contacts />
+      <Cursor />
       <ScrollToTop />
     </ThemeProvider>
   );
