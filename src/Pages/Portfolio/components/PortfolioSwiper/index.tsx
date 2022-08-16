@@ -1,5 +1,6 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
+// eslint-disable-next-line import/no-unresolved
 import 'swiper/css';
 import { Navigation } from 'swiper';
 import { ProjectLink, StyledSwiper } from './styles';
