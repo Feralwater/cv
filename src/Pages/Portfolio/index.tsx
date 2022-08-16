@@ -6,9 +6,13 @@ import Paragraph from 'components/Paragraph/Paragraph';
 
 const Portfolio = () => (
   <PortfolioBlock id="portfolio">
-    <H3>Portfolio</H3>
-    <Paragraph text="Here is my open-source projects. You can find code on my github" />
-    <PortfolioSwiper />
+    <div>
+      <H3>Portfolio</H3>
+      <Paragraph text="Here is my open-source projects. You can find code on my github" />
+    </div>
+    <div>
+      <PortfolioSwiper />
+    </div>
   </PortfolioBlock>
 );
 
