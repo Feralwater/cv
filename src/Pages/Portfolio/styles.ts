@@ -10,3 +10,7 @@ export const PortfolioBlock = styled.section`
   flex-direction: column;
   gap: 100px;
 `;
+
+export const GithubLink = styled.a`
+  color: ${({ theme }) => theme.colors.font};
+`;
