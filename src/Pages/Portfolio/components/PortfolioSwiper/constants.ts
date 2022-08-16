@@ -46,8 +46,8 @@ export const PORTFOLIO = [
     id: '7',
     img: '/img/project_7.png',
     alt: 'project 7',
-    link: 'https://scandiweb-test-task-git-main-feralwater.vercel.app/',
-    description: 'E-commerce, Jul 2021',
+    link: 'https://e-commerce-feralwater.vercel.app/',
+    description: 'E-commerce (please run endpoint locally, to see items in shop), Jul 2021',
   },
   {
     id: '8',
