@@ -33,6 +33,7 @@ export const baseTheme = {
     dune: '#333333',
     amour: '#eeeeee',
     gravel: '#444444',
+    onyx: '#111111',
   },
 
   borders: {
