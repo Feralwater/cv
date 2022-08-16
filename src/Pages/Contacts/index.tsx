@@ -13,10 +13,10 @@ const Contacts = () => (
   <ContactsBlock id="contacts">
     <H3>Contacts</H3>
     <SubInfo>
-      <Paragraph
-        text="Please contact me in any way that is convenient for you:
-        email, phone, social media, or fill out the form below."
-      />
+      <Paragraph>
+        Please contact me in any way that is convenient for you:
+        email, phone, social media, or fill out the form below.
+      </Paragraph>
     </SubInfo>
     <ContactCards>
       {CONTACTS.map(({ name, icon, contacts }) => (
