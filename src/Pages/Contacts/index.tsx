@@ -1,23 +1,19 @@
 import React from 'react';
 import {
-  ContactCards, ContactsBlock, MailAuthor, MailMe, SubInfo,
+  ContactCards, ContactsBlock, MailAuthor, MailMe,
 } from 'Pages/Contacts/styles';
-import { H3 } from 'topography';
-import Paragraph from 'components/Paragraph/Paragraph';
 import { CONTACTS } from 'Pages/Contacts/constants';
 import ContactCard from 'Pages/Contacts/components/ContactCard';
 import GoogleMap from 'Pages/Contacts/components/GoogleMap';
 import Form from 'Pages/Contacts/components/Form';
+import PageInfo from 'components/PageInfo';
 
 const Contacts = () => (
   <ContactsBlock id="contacts">
-    <H3>Contacts</H3>
-    <SubInfo>
-      <Paragraph>
-        Please contact me in any way that is convenient for you:
-        email, phone, social media, or fill out the form below.
-      </Paragraph>
-    </SubInfo>
+    <PageInfo header="Contacts">
+      Please contact me in any way that is convenient for you:
+      email, phone, social media, or fill out the form below.
+    </PageInfo>
     <ContactCards>
       {CONTACTS.map(({ name, icon, contacts }) => (
         <ContactCard key={name} name={name} icon={icon} contacts={contacts} />))}

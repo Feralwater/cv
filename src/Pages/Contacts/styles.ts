@@ -16,10 +16,6 @@ export const ContactCards = styled.div`
   flex-wrap: wrap;
 `;
 
-export const SubInfo = styled.div`
-  max-width: 50%;
-`;
-
 export const MailAuthor = styled.div`
   display: flex;
   width: 100%;

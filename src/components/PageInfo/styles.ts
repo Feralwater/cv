@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Info = styled.div`
+  width: 50%;
+`;
+
 export const H3 = styled.h3`
   color: ${({ theme }) => theme.colors.font};
   font-size: 45px;

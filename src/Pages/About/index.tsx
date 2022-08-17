@@ -18,10 +18,10 @@ import {
 import Paragraph from 'components/Paragraph/Paragraph';
 import { skills } from 'Pages/About/components/Skill/constants';
 import Skill from 'Pages/About/components/Skill';
-import { H3 } from 'topography';
 import Modal from 'components/Modal';
 import Button from 'components/Button';
 import PersonalInfo from 'Pages/PersolnalInfo';
+import PageInfo from 'components/PageInfo';
 
 const About = () => {
   const modal = useRef<{open:()=>void}>(null);
@@ -29,7 +29,9 @@ const About = () => {
 
   return (
     <AboutBlock id="about">
-      <H3>About Me</H3>
+      <PageInfo
+        header="About Me"
+      />
       <AboutContent>
         <LeftPart>
           <AboutInfo>
