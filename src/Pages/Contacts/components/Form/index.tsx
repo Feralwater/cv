@@ -1,6 +1,6 @@
 import React, { ChangeEvent, MouseEvent, useState } from 'react';
 import Input from 'components/Input';
-import Paragraph from 'components/Paragraph/Paragraph';
+import Paragraph from 'components/Paragraph';
 import Button from 'components/Button';
 import emailjs from 'emailjs-com';
 import {

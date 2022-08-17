@@ -1,6 +1,6 @@
 import React from 'react';
+import { Dot, Ring } from 'components/Cursor/styles';
 import useMousePosition from '../../hooks/useMousePosition';
-import { Dot, Ring } from './Cursor.styles';
 
 const Cursor: React.VFC = () => {
   const { x, y } = useMousePosition();

@@ -7,7 +7,7 @@ import {
   SwitchHandle,
   ThemeSwitcherInput,
   ThemeSwitcherLabel,
-} from './ThemeSwitcher.styles';
+} from './styles';
 
 interface IThemeSwitcher {
   handleChange: () => void

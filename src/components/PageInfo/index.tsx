@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import Paragraph from 'components/Paragraph/Paragraph';
+import Paragraph from 'components/Paragraph';
 import { H3, Info } from './styles';
 
 interface IPageInfo {

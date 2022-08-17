@@ -15,7 +15,7 @@ import {
   SkillsTitle,
   Years,
 } from 'Pages/About/styles';
-import Paragraph from 'components/Paragraph/Paragraph';
+import Paragraph from 'components/Paragraph';
 import { skills } from 'Pages/About/components/Skill/constants';
 import Skill from 'Pages/About/components/Skill';
 import Modal from 'components/Modal';
