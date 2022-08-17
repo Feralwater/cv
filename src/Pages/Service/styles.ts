@@ -7,3 +7,7 @@ export const ServiceBlock = styled.section`
   box-sizing: border-box;
   padding: 120px 20px 170px 308px;
 `;
+
+export const ServiceInfo = styled.div`
+  width: 50%;
+`;
