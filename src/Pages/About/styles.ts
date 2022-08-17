@@ -5,7 +5,7 @@ export const AboutBlock = styled.section`
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  padding: 120px 20px 170px 308px;
+  padding: 50px 20px 50px 308px;
 `;
 
 export const AboutContent = styled.div`
