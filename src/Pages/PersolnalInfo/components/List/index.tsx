@@ -28,7 +28,7 @@ const List = ({ list }:IList) => (
       list.map(({
         icon, time, title, place, description,
       }) => (
-        <ListItem key={time}>
+        <ListItem key={time + title}>
           <Icon>{icon}</Icon>
           <Time>{time}</Time>
           <Header>

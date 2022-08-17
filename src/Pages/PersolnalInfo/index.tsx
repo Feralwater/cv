@@ -1,4 +1,9 @@
 import React from 'react';
+import AboutList from 'Pages/PersolnalInfo/components/AboutList';
+import { HiOutlineArrowDown } from 'react-icons/hi';
+import AchievementList from 'Pages/PersolnalInfo/components/AchievementList';
+import List from 'Pages/PersolnalInfo/components/List';
+import { EDUCATION, EXPERIENCE } from 'Pages/PersolnalInfo/constants';
 import {
   ButtonWrapper,
   Column,
@@ -6,12 +11,7 @@ import {
   Popup,
   PopupHeader,
   PopupRow,
-} from 'Pages/PersolnalInfo/styles';
-import AboutList from 'Pages/PersolnalInfo/components/AboutList';
-import { HiOutlineArrowDown } from 'react-icons/hi';
-import AchievementList from 'Pages/PersolnalInfo/components/AchievementList';
-import List from 'Pages/PersolnalInfo/components/List';
-import { EDUCATION, EXPERIENCE } from 'Pages/PersolnalInfo/constants';
+} from './styles';
 
 const PersonalInfo = () => (
   <Popup>
