@@ -11,27 +11,32 @@ export const Overlay = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 50px;
-  z-index: 1000;
-  background-color: ${({ theme }) => theme.colors.modalBackground};
-  border: none;
+  width: 100%;
   max-height: 70vh;
   overflow-y: auto;
   overflow-x: hidden;
-  border-radius: 4px;
-  outline: none;
+  padding: 50px;
+  box-sizing: border-box;
 
   ::-webkit-scrollbar {
     width: 5px;
   }
+
   ::-webkit-scrollbar-thumb {
     background-color: #7e7e7e;
     border-radius: 6px;
   }
+`;
+
+export const ModalWrapper = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 1000;
+  background-color: ${({ theme }) => theme.colors.modalBackground};
+  border-radius: 4px;
 `;
 
 export const CloseButton = styled.button`
@@ -49,8 +54,8 @@ export const CloseButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  & svg{
+
+  & svg {
     width: 45px;
     height: 45px;
     filter: invert(1);

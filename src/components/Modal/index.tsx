@@ -3,7 +3,9 @@ import React, {
 } from 'react';
 import ReactDOM from 'react-dom';
 import { GrClose } from 'react-icons/gr';
-import { CloseButton, ModalContent, Overlay } from './styles';
+import {
+  CloseButton, ModalContent, ModalWrapper, Overlay,
+} from './styles';
 
 const modalElement = document.getElementById('modal') as HTMLElement;
 
@@ -40,12 +42,15 @@ const Modal = forwardRef(({ children }:IModal, ref) => {
   }
 
   return ReactDOM.createPortal(
-    <Overlay onClick={close}>
-      <ModalContent onClick={onModalContentClick}>
+    <>
+      <Overlay onClick={close} />
+      <ModalWrapper>
         <CloseButton type="button" onClick={close}><GrClose /></CloseButton>
-        {children}
-      </ModalContent>
-    </Overlay>,
+        <ModalContent onClick={onModalContentClick}>
+          {children}
+        </ModalContent>
+      </ModalWrapper>
+    </>,
     modalElement,
   );
 });
