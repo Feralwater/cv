@@ -14,18 +14,20 @@ const ServiceListItem = ({ img, header }:IServiceListItem) => {
   const openModalHandler = () => modal.current?.open();
 
   return (
-    <ItemInner key={header} onClick={openModalHandler}>
-      <ItemInnerImg>{img}</ItemInnerImg>
-      <ItemInnerHeader>{header}</ItemInnerHeader>
-      <Inner>
-        Learn more
-        {' '}
-        <RightArrow />
-      </Inner>
+    <>
+      <ItemInner key={header} onClick={openModalHandler}>
+        <ItemInnerImg>{img}</ItemInnerImg>
+        <ItemInnerHeader>{header}</ItemInnerHeader>
+        <Inner>
+          Learn more
+          {' '}
+          <RightArrow />
+        </Inner>
+      </ItemInner>
       <Modal ref={modal}>
         hhhh
       </Modal>
-    </ItemInner>
+    </>
   );
 };
 
