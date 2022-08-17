@@ -16,8 +16,10 @@ const ServiceListItem = ({ img, header }:IServiceListItem) => {
   return (
     <>
       <ItemInner key={header} onClick={openModalHandler}>
-        <ItemInnerImg>{img}</ItemInnerImg>
-        <ItemInnerHeader>{header}</ItemInnerHeader>
+        <div>
+          <ItemInnerImg>{img}</ItemInnerImg>
+          <ItemInnerHeader>{header}</ItemInnerHeader>
+        </div>
         <Inner>
           Learn more
           {' '}

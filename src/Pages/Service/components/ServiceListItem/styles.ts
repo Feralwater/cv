@@ -68,6 +68,9 @@ export const ItemInner = styled.li`
   cursor: pointer;
   word-wrap: break-word;
   width: calc(25% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.black};
