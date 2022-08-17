@@ -15,7 +15,7 @@ import { socialMediaLinks } from 'Pages/Home/components/SocialMedia/constants';
 import useTypingAnimation from '../../hooks/useTypingAnimation';
 
 const Home = () => {
-  const { typedText } = useTypingAnimation(['Web Developer', 'I`m building user interfaces']);
+  const { typedText } = useTypingAnimation(['Web Developer', 'I create user interfaces']);
 
   return (
     <HomeBlock id="home">
