@@ -5,8 +5,8 @@ import ServiceListItem from '../ServiceListItem';
 
 const ServiceList = () => (
   <List>
-    {SERVICE_LIST.map(({ img, header }) => (
-      <ServiceListItem img={img} header={header} key={header} />
+    {SERVICE_LIST.map(({ img, header, modal }) => (
+      <ServiceListItem img={img} header={header} key={header} modal={modal} />
     ))}
   </List>
 );

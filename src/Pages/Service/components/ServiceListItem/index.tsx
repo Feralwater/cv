@@ -7,11 +7,12 @@ import {
 interface IServiceListItem {
   img: ReactNode;
   header: string;
+  modal: ReactNode;
 }
 
-const ServiceListItem = ({ img, header }:IServiceListItem) => {
-  const modal = useRef<{open:()=>void}>(null);
-  const openModalHandler = () => modal.current?.open();
+const ServiceListItem = ({ img, header, modal }:IServiceListItem) => {
+  const modalRef = useRef<{open:()=>void}>(null);
+  const openModalHandler = () => modalRef.current?.open();
 
   return (
     <>
@@ -31,8 +32,8 @@ const ServiceListItem = ({ img, header }:IServiceListItem) => {
           <RightArrow />
         </Inner>
       </ItemInner>
-      <Modal ref={modal}>
-        hhhh
+      <Modal ref={modalRef}>
+        {modal}
       </Modal>
     </>
   );

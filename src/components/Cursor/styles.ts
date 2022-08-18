@@ -15,9 +15,9 @@ export const Ring = styled.div<IRing>`
   border-radius: 100%;
   transform: translate(-50%, -50%);
   will-change: transform;
-  z-index: 999;
+  z-index: 99999;
   pointer-events: none;
-  transition: all .5s ease 0s;
+  transition: all .7s ease-in-out 0s;
 `;
 
 export const Dot = styled.div`
@@ -29,6 +29,6 @@ export const Dot = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: 100%;
   transform: translate(-50%, -50%);
-  z-index: 999;
+  z-index: 99999;
   pointer-events: none;
 `;
