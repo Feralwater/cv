@@ -20,8 +20,8 @@ export const HomeWrapper = styled.div`
 `;
 
 export const HomeImageWrapper = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 245px;
+  height: 245px;
 `;
 
 export const HomeImage = styled.img`
