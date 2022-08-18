@@ -22,7 +22,7 @@ const Navbar = () => (
       >
         {
           navbarConstants.map(({ navIcon, navText }) => (
-            <li>
+            <li key={navText}>
               <Anchor href={`#${navText.toLowerCase()}`}>
                 {navIcon}
                 {navText}
