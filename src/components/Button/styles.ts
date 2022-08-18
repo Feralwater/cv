@@ -10,6 +10,7 @@ export const StyledButton = styled.button`
   font-size: 18px;
   letter-spacing: .4px;
   transition: .5s;
+  cursor: pointer;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.black};

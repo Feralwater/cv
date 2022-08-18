@@ -8,6 +8,7 @@ import MouseContextProvider from './context/Mouse-context';
 const GlobalStyle = createGlobalStyle`
   ${normalize}
   html {
+    cursor: none;
     caret-color: transparent;
     scroll-behavior: smooth;
     overflow-x: hidden;
