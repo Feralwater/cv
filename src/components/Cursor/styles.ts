@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
-export const Ring = styled.div`
+interface IRing {
+  isMouseDown: boolean;
+}
+
+export const Ring = styled.div<IRing>`
   position: fixed;
   top: 0;
   left: 0;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(169, 175, 195, 0.3);
+  width: ${({ isMouseDown }) => (isMouseDown ? '70px' : '45px')};
+  height: ${({ isMouseDown }) => (isMouseDown ? '70px' : '45px')};
+  background-color: ${({ theme }) => theme.colors.aluminium};
+  opacity: 0.3;
   border-radius: 100%;
   transform: translate(-50%, -50%);
   will-change: transform;
@@ -21,7 +26,7 @@ export const Dot = styled.div`
   left: 50%;
   width: 8px;
   height: 8px;
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.colors.white};
   border-radius: 100%;
   transform: translate(-50%, -50%);
   z-index: 999;
