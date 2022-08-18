@@ -53,11 +53,11 @@ const About = () => {
             <SkillsTitle>What is my primary skills?</SkillsTitle>
             <div>
               <Paragraph>
-                Here is my primary skills and how often I use them.
+                Here is my primary skills.
               </Paragraph>
               <Skills>
-                {skills.map((skill) => (
-                  <Skill key={skill} skill={skill} />
+                {skills.map(({ skill, progress }) => (
+                  <Skill key={skill} skill={skill} progress={progress} />
                 ))}
               </Skills>
             </div>
