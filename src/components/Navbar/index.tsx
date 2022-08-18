@@ -1,52 +1,52 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { navbarConstants } from 'components/Navbar/constants';
 import {
+  Anchor,
+  AuthorAvatar,
+  AuthorData,
+  AuthorEmail,
+  AuthorName,
   LinksWrapper,
   NavBar,
-  NavbarLogo,
   NavbarFooter,
-  AuthorAvatar,
-  AuthorName,
-  AuthorEmail, AuthorData,
-} from 'components/Navbar/styles';
-import NavItem from 'components/Navbar/NavItem';
-import { navbarConstants } from 'components/Navbar/constants';
+  NavbarLogo,
+} from './styles';
 
-const Index = () => {
-  const [path, setPath] = useState('Home');
+const Navbar = () => (
+  <NavBar>
+    <NavbarLogo>Resume</NavbarLogo>
+    <nav>
+      <LinksWrapper
+        items={['home', 'about', 'service', 'portfolio', 'contacts']}
+        currentClassName="is-current"
+      >
+        {
+          navbarConstants.map(({ navIcon, navText }) => (
+            <li>
+              <Anchor href={`#${navText.toLowerCase()}`}>
+                {navIcon}
+                {navText}
+              </Anchor>
+            </li>
+          ))
+        }
+      </LinksWrapper>
+    </nav>
+    <NavbarFooter>
+      <AuthorAvatar />
+      <AuthorData>
+        <AuthorName>Victoria</AuthorName>
+        <AuthorEmail
+          href="mailto:lineviktoriya@gmail.com"
+          initial={{ scale: 1 }}
+          animate={{ scale: 1.1 }}
+          transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
+        >
+          mail me
+        </AuthorEmail>
+      </AuthorData>
+    </NavbarFooter>
+  </NavBar>
+);
 
-  return (
-    <NavBar>
-      <NavbarLogo>Resume</NavbarLogo>
-      <nav>
-        <LinksWrapper>
-          {navbarConstants.map(({ navIcon, navText }) => (
-            <NavItem
-              key={navText}
-              navTo={`#${navText.toLowerCase()}`}
-              navIcon={navIcon}
-              navText={navText}
-              isActive={path === navText}
-              setPath={setPath}
-            />
-          ))}
-        </LinksWrapper>
-      </nav>
-      <NavbarFooter>
-        <AuthorAvatar />
-        <AuthorData>
-          <AuthorName>Victoria</AuthorName>
-          <AuthorEmail
-            href="mailto:lineviktoriya@gmail.com"
-            initial={{ scale: 1 }}
-            animate={{ scale: 1.1 }}
-            transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-          >
-            mail me
-          </AuthorEmail>
-        </AuthorData>
-      </NavbarFooter>
-    </NavBar>
-  );
-};
-
-export default Index;
+export default Navbar;
