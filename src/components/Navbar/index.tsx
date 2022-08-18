@@ -35,7 +35,14 @@ const Index = () => {
         <AuthorAvatar />
         <AuthorData>
           <AuthorName>Victoria</AuthorName>
-          <AuthorEmail href="mailto:lineviktoriya@gmail.com">mail me</AuthorEmail>
+          <AuthorEmail
+            href="mailto:lineviktoriya@gmail.com"
+            initial={{ scale: 1 }}
+            animate={{ scale: 1.1 }}
+            transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
+          >
+            mail me
+          </AuthorEmail>
         </AuthorData>
       </NavbarFooter>
     </NavBar>

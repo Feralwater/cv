@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const AboutBlock = styled.section`
@@ -31,8 +32,9 @@ export const Greeting = styled.h3`
   }
 `;
 
-export const AboutSkills = styled.div`
+export const AboutSkills = styled(motion.div)`
   width: 100%;
+  transition: all 0.7s ease-in-out;
 `;
 
 export const SkillsTitle = styled.h3`
@@ -55,11 +57,12 @@ export const Skills = styled.div`
   gap: 40px;
 `;
 
-export const PictureContainer = styled.div`
+export const PictureContainer = styled(motion.div)`
   position: relative;
   width: 410px;
   height: 550px;
   box-sizing: border-box;
+  transition: all 0.7s ease-in-out;
 `;
 
 export const AuthorPicture = styled.div`
@@ -73,7 +76,7 @@ export const AuthorPicture = styled.div`
   filter: grayscale(85%);
 `;
 
-export const AuthorExperience = styled.div`
+export const AuthorExperience = styled(motion.div)`
   position: absolute;
   width: 250px;
   height: 250px;
@@ -81,6 +84,7 @@ export const AuthorExperience = styled.div`
   background-color: ${({ theme }) => theme.colors.rhino};
   bottom: -50px;
   left: -50px;
+  transition: all 0.5s ease-in-out;
 `;
 
 export const AuthorExperienceInfo = styled.div`

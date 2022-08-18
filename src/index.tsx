@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
   ${normalize}
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
   body {
     font-family: 'Poppins', sans-serif;

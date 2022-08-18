@@ -1,5 +1,5 @@
 import React from 'react';
-import { GithubLink, PortfolioBlock } from 'Pages/Portfolio/styles';
+import { GithubLink, PortfolioBlock, SwiperWrapper } from 'Pages/Portfolio/styles';
 import PortfolioSwiper from 'Pages/Portfolio/components/PortfolioSwiper';
 import PageInfo from 'components/PageInfo';
 
@@ -10,9 +10,12 @@ const Portfolio = () => (
       {' '}
       <GithubLink href="https://github.com/Feralwater">Github.</GithubLink>
     </PageInfo>
-    <div>
+    <SwiperWrapper
+      initial={{ opacity: 0, x: '-200' }}
+      whileInView={{ opacity: 1, x: '0' }}
+    >
       <PortfolioSwiper />
-    </div>
+    </SwiperWrapper>
   </PortfolioBlock>
 );
 

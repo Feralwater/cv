@@ -19,7 +19,10 @@ const Contacts = () => (
         <ContactCard key={name} name={name} icon={icon} contacts={contacts} />))}
     </ContactCards>
     <MailAuthor>
-      <MailMe>
+      <MailMe
+        initial={{ opacity: 0, x: '-100%' }}
+        whileInView={{ opacity: 1, x: '0' }}
+      >
         <Form />
       </MailMe>
       <GoogleMap />

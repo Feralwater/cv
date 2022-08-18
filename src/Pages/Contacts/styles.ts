@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const ContactsBlock = styled.section`
   background-color: ${({ theme }) => theme.colors.pageBackground};
@@ -22,6 +23,7 @@ export const MailAuthor = styled.div`
   gap: 60px;
 `;
 
-export const MailMe = styled.div`
+export const MailMe = styled(motion.div)`
   flex: 1 1 50%;
+  transition:  all 0.7s ease-in-out 1s;
 `;

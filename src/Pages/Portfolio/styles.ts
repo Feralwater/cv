@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const PortfolioBlock = styled.section`
   background-color: ${({ theme }) => theme.colors.buttonHoverColor};
@@ -13,4 +14,8 @@ export const PortfolioBlock = styled.section`
 
 export const GithubLink = styled.a`
   color: ${({ theme }) => theme.colors.font};
+`;
+
+export const SwiperWrapper = styled(motion.div)`
+  transition: all 0.7s ease-in-out;
 `;

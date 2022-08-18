@@ -15,7 +15,10 @@ interface IContactCard {
 }
 
 const ContactCard = ({ name, contacts, icon }:IContactCard) => (
-  <Card>
+  <Card
+    initial={{ opacity: 0, x: '-100' }}
+    whileInView={{ opacity: 1, x: '0' }}
+  >
     <Icon>{icon}</Icon>
     <Info>
       <CardName>{name}</CardName>

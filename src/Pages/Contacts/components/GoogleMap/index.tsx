@@ -2,7 +2,10 @@ import React from 'react';
 import { Map } from './styles';
 
 const GoogleMap = () => (
-  <Map>
+  <Map
+    initial={{ opacity: 0, x: '100%' }}
+    whileInView={{ opacity: 1, x: '0' }}
+  >
     <iframe
       width="100%"
       height="100%"

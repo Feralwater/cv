@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const NavBar = styled.div`
   width: 288px;
@@ -83,10 +84,9 @@ export const AuthorName = styled.h3`
   margin: 0;
 `;
 
-export const AuthorEmail = styled.a`
+export const AuthorEmail = styled(motion.a)`
   cursor: pointer;
   text-decoration: none;
   font-size: 14px;
-  transition: all .3s ease;
   color: ${({ theme }) => theme.colors.granite};
 `;

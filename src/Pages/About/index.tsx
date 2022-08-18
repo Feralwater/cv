@@ -46,7 +46,10 @@ const About = () => {
               I like work with new people.
             </Paragraph>
           </AboutInfo>
-          <AboutSkills>
+          <AboutSkills
+            initial={{ opacity: 0, x: '-100' }}
+            whileInView={{ opacity: 1, x: '0' }}
+          >
             <SkillsTitle>What is my primary skills?</SkillsTitle>
             <div>
               <Paragraph>
@@ -63,17 +66,20 @@ const About = () => {
             </Button>
           </AboutSkills>
         </LeftPart>
-        <div>
-          <PictureContainer>
-            <AuthorPicture />
-            <AuthorExperience>
-              <AuthorExperienceInfo>
-                <Years>1+ Year</Years>
-                <Experience>Of Experience</Experience>
-              </AuthorExperienceInfo>
-            </AuthorExperience>
-          </PictureContainer>
-        </div>
+        <PictureContainer
+          initial={{ opacity: 0, x: '100' }}
+          whileInView={{ opacity: 1, x: '0' }}
+        >
+          <AuthorPicture />
+          <AuthorExperience
+            whileInView={{ opacity: 1, y: '0' }}
+          >
+            <AuthorExperienceInfo>
+              <Years>1+ Year</Years>
+              <Experience>Of Experience</Experience>
+            </AuthorExperienceInfo>
+          </AuthorExperience>
+        </PictureContainer>
       </AboutContent>
       <Modal ref={modal}>
         <PersonalInfo />

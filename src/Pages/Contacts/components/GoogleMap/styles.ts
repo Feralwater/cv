@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Map = styled.div`
+export const Map = styled(motion.div)`
   flex: 1 0 50%;
+  transition: all 0.7s ease-in-out 1s;
   
   & iframe {
     box-sizing: border-box;

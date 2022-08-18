@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Inner = styled.div`
   text-decoration: none;
@@ -58,7 +59,7 @@ export const RightArrow = styled.span`
 }
 `;
 
-export const ItemInner = styled.li`
+export const ItemInner = styled(motion.li)`
   background-color: ${({ theme }) => theme.colors.sidebarBackground};
   color: ${({ theme }) => theme.colors.font};
   padding: 50px 40px 45px 50px;
@@ -71,6 +72,7 @@ export const ItemInner = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all .7s ease-in-out;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.black};

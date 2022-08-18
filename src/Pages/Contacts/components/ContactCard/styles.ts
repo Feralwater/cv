@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
   background-color: ${({ theme }) => theme.colors.buttonHoverColor};
   display: inline-flex;
   padding: 35px 35px 48px 35px;
@@ -10,6 +11,7 @@ export const Card = styled.div`
   overflow: hidden;
   box-sizing: border-box;
   box-shadow: ${({ theme }) => theme.shadows.rightShadow};
+  transition: all 0.7s ease-in-out;
 `;
 
 export const Icon = styled.div`

@@ -15,7 +15,12 @@ const ServiceListItem = ({ img, header }:IServiceListItem) => {
 
   return (
     <>
-      <ItemInner key={header} onClick={openModalHandler}>
+      <ItemInner
+        key={header}
+        onClick={openModalHandler}
+        initial={{ opacity: 0, x: '-200' }}
+        whileInView={{ opacity: 1, x: '0' }}
+      >
         <div>
           <ItemInnerImg>{img}</ItemInnerImg>
           <ItemInnerHeader>{header}</ItemInnerHeader>
