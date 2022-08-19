@@ -80,6 +80,7 @@ export const LightTheme: DefaultTheme = {
     time: `${baseTheme.colors.dune}`,
     timeBackground: `${baseTheme.colors.amour}`,
     symbol: `${baseTheme.colors.gravel}`,
+    modalTitle: `${baseTheme.colors.midnight}`,
   },
   borders: {
     ...baseTheme.borders,
@@ -114,6 +115,7 @@ export const DarkTheme: DefaultTheme = {
     time: `${baseTheme.colors.white}`,
     timeBackground: `${baseTheme.colors.rhino}`,
     symbol: `${baseTheme.colors.amour}`,
+    modalTitle: `${baseTheme.colors.white}`,
   },
   borders: {
     ...baseTheme.borders,
