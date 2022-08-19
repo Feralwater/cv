@@ -10,7 +10,7 @@ export const Ring = styled.div<IRing>`
   left: 0;
   width: ${({ isMouseDown }) => (isMouseDown ? '70px' : '45px')};
   height: ${({ isMouseDown }) => (isMouseDown ? '70px' : '45px')};
-  background-color: ${({ theme }) => theme.colors.aluminium};
+  background-color: ${({ theme }) => theme.colors.horizon};
   opacity: 0.3;
   border-radius: 100%;
   transform: translate(-50%, -50%);
@@ -26,7 +26,7 @@ export const Dot = styled.div`
   left: 50%;
   width: 8px;
   height: 8px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.horizon};
   border-radius: 100%;
   transform: translate(-50%, -50%);
   z-index: 99999;
