@@ -72,7 +72,6 @@ export const ItemInner = styled(motion.li)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all .7s ease-in-out;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.black};

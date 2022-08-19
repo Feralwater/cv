@@ -21,6 +21,8 @@ const ServiceListItem = ({ img, header, modal }:IServiceListItem) => {
         onClick={openModalHandler}
         initial={{ opacity: 0, x: '-200' }}
         whileInView={{ opacity: 1, x: '0' }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 10 }}
       >
         <div>
           <ItemInnerImg>{img}</ItemInnerImg>
