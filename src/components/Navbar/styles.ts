@@ -22,17 +22,8 @@ export const NavBar = styled.div`
 `;
 
 export const NavbarLogo = styled.div`
-  font-size: 34px;
-  font-weight: 900;
   padding: 40px;
   border-bottom: ${({ theme }) => theme.borders.navbarBorder};
-  box-sizing: border-box;
-  cursor: none;
-  
-  &:first-letter {
-    color: ${({ theme }) => theme.colors.firstLetter};
-    text-decoration: underline;
-  }
 `;
 
 export const LinksWrapper = styled(Scrollspy)`

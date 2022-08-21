@@ -1,5 +1,6 @@
 import React from 'react';
 import { navbarConstants } from 'components/Navbar/constants';
+import Logo from 'components/Logo';
 import {
   Anchor,
   AuthorAvatar,
@@ -14,7 +15,9 @@ import {
 
 const Navbar = () => (
   <NavBar>
-    <NavbarLogo>Resume</NavbarLogo>
+    <NavbarLogo>
+      <Logo />
+    </NavbarLogo>
     <nav>
       <LinksWrapper
         items={['home', 'about', 'service', 'portfolio', 'contacts']}

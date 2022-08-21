@@ -8,8 +8,9 @@ export const StyledHeader = styled.header`
   background: ${({ theme }) => theme.colors.header};
   box-shadow: ${({ theme }) => theme.shadows.headerShadow};
   z-index: 99;
-  padding: 36px 0;
+  padding: 20px 0;
   display: none;
+  box-sizing: border-box;
   
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
     display: block;
