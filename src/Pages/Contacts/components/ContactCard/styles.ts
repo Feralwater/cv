@@ -7,7 +7,8 @@ export const Card = styled(motion.div)`
   padding: 35px 35px 48px 35px;
   border-radius: 6px;
   gap: 15px;
-  flex: 0 1 358px;
+  min-width: fit-content;
+  flex: 0 1 30%;
   overflow: hidden;
   box-sizing: border-box;
   box-shadow: ${({ theme }) => theme.shadows.rightShadow};

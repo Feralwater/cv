@@ -18,7 +18,6 @@ export const ContactCards = styled.div`
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 `;
 
 export const MailAuthor = styled.div`
