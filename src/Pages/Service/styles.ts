@@ -6,4 +6,8 @@ export const ServiceBlock = styled.section`
   width: 100%;
   box-sizing: border-box;
   padding: 50px 20px 50px 308px;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    padding: 50px 20px;
+  }
 `;

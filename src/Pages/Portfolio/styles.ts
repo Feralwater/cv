@@ -10,6 +10,10 @@ export const PortfolioBlock = styled.section`
   display: flex;
   flex-direction: column;
   gap: 100px;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    padding: 50px 20px;
+  }
 `;
 
 export const GithubLink = styled.a`

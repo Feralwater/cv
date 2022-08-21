@@ -9,6 +9,10 @@ export const HomeBlock = styled.section`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    padding: 50px 20px;
+  }
 `;
 
 export const HomeWrapper = styled.div`

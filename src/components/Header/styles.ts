@@ -7,8 +7,8 @@ export const StyledHeader = styled.header`
   top: 0;
   background: ${({ theme }) => theme.colors.header};
   box-shadow: ${({ theme }) => theme.shadows.headerShadow};
-  z-index: 999;
-  padding: 20px 0;
+  z-index: 99;
+  padding: 36px 0;
   display: none;
   
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {

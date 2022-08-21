@@ -15,6 +15,10 @@ export const NavBar = styled.div`
   z-index: 99;
   transition: all .5s ease;
   box-shadow: ${({ theme }) => theme.shadows.navbarShadow};
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    transform: translateX(-100%);
+  }
 `;
 
 export const NavbarLogo = styled.div`

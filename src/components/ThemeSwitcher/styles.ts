@@ -13,6 +13,15 @@ export const ThemeSwitcherLabel = styled.label`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    width: 45px;
+    height: 45px;
+    left: auto;
+    right: 80px;
+    bottom: auto;
+    top: 13px;
+  }
 `;
 
 export const ThemeSwitcherInput = styled.input`
