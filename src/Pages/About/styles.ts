@@ -8,7 +8,7 @@ export const AboutBlock = styled.section`
   box-sizing: border-box;
   padding: 50px 20px 50px 308px;
   overflow-x: hidden;
-  
+
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
     padding: 50px 20px;
   }
@@ -19,6 +19,13 @@ export const AboutContent = styled.div`
   display: flex;
   padding-top: 60px;
   justify-content: space-between;
+
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
 `;
 
 export const AboutInfo = styled.div`
@@ -68,6 +75,11 @@ export const PictureContainer = styled(motion.div)`
   height: 550px;
   box-sizing: border-box;
   transition: all 0.7s ease-in-out;
+  
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    width: 280px;
+    height: 380px;
+  }
 `;
 
 export const AuthorPicture = styled.div`
@@ -90,6 +102,15 @@ export const AuthorExperience = styled(motion.div)`
   bottom: -50px;
   left: -50px;
   transition: all 0.5s ease-in-out;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    width: 150px;
+    height: 150px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    left: 0;
+  }
 `;
 
 export const AuthorExperienceInfo = styled.div`
@@ -107,10 +128,18 @@ export const Years = styled.h3`
   font-size: 35px;
   font-weight: 700;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    font-size: 22px;
+  }
 `;
 
 export const Experience = styled.span`
   color: ${({ theme }) => theme.colors.white};
   font-size: 19px;
   font-weight: 500;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    font-size: 13px;
+  }
 `;
