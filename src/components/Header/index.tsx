@@ -1,10 +1,19 @@
 import React from 'react';
-import { StyledHeader } from 'components/Header/styles';
+import { MobToggle, StyledHeader } from 'components/Header/styles';
 import Logo from 'components/Logo';
+import Burger from 'components/Burger';
 
-const Header = () => (
+interface IHeader {
+  isOpen: boolean;
+  hideNavbarToggle: () => void;
+}
+
+const Header = ({ isOpen, hideNavbarToggle }:IHeader) => (
   <StyledHeader>
     <Logo />
+    <MobToggle onClick={hideNavbarToggle}>
+      <Burger isOpen={isOpen} />
+    </MobToggle>
   </StyledHeader>
 );
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { useGlobalTheme } from 'hooks/useGlobalTheme';
 import { theme } from 'theme';
@@ -15,11 +15,16 @@ import ThemeSwitcher from './components/ThemeSwitcher';
 
 function App() {
   const { globalTheme, handleChangeTheme } = useGlobalTheme();
+  const [isOpen, setIsOpen] = useState(false);
+  const hideNavbarToggle = useCallback(() => {
+    setIsOpen((prevState) => !prevState);
+  }, [isOpen]);
+
   return (
     <ThemeProvider theme={theme[globalTheme]}>
       <ThemeSwitcher handleChange={handleChangeTheme} />
-      <Header />
-      <Navbar />
+      <Header isOpen={isOpen} hideNavbarToggle={hideNavbarToggle} />
+      <Navbar isOpen={isOpen} />
       <Home />
       <About />
       <Service />

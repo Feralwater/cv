@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Scrollspy from 'react-scrollspy';
 
-export const NavBar = styled.div`
+interface NavbarProps {
+  isOpen: boolean;
+}
+
+export const NavBar = styled.div<NavbarProps>`
   width: 288px;
   height: 100vh;
   background-color: ${({ theme }) => theme.colors.sidebarBackground};
@@ -17,7 +21,7 @@ export const NavBar = styled.div`
   box-shadow: ${({ theme }) => theme.shadows.navbarShadow};
 
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
-    transform: translateX(-100%);
+    transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(-100%)')};
   }
 `;
 
@@ -31,11 +35,11 @@ export const LinksWrapper = styled(Scrollspy)`
   list-style-type: none;
   margin: 0;
   padding: 60px 40px;
-  
+
   & > li.is-current {
     background-color: ${({ theme }) => (theme.colors.activeAnchor)};
   }
-  
+
   & > li {
     margin: 0 0 8px 0;
     display: flex;
@@ -68,7 +72,7 @@ export const AuthorAvatar = styled.div`
   border: ${({ theme }) => theme.borders.navbarBorder};
   filter: grayscale(100%);
   flex-shrink: 0;
-  
+
   &::after {
     content: '';
     display: inline-block;
@@ -132,7 +136,7 @@ export const Anchor = styled.a`
     transition: all .3s ease;
   }
 
-  &:hover&::before {
+  &:hover &::before {
     width: 100%;
   }
 `;

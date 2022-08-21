@@ -13,8 +13,12 @@ import {
   NavbarLogo,
 } from './styles';
 
-const Navbar = () => (
-  <NavBar>
+interface INavbar {
+  isOpen: boolean;
+}
+
+const Navbar = ({ isOpen }:INavbar) => (
+  <NavBar isOpen={isOpen}>
     <NavbarLogo>
       <Logo />
     </NavbarLogo>

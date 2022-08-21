@@ -16,3 +16,15 @@ export const StyledHeader = styled.header`
     display: block;
   }
 `;
+
+export const MobToggle = styled.div`
+  position: fixed;
+  right: 20px;
+  top: 13px;
+  z-index: 99;
+  display: none;
+  
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    display: block;
+  }
+`;
