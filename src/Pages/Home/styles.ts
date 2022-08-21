@@ -9,6 +9,7 @@ export const HomeBlock = styled.section`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  overflow-x: hidden;
 
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
     padding: 50px 20px;
@@ -20,7 +21,6 @@ export const HomeWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 100px 20px;
 `;
 
 export const HomeImageWrapper = styled.div`
@@ -43,6 +43,7 @@ export const HomeName = styled.h5`
   font-weight: 500;
   margin-bottom: 14px;
   line-height: 1.2;
+  text-align: center;
   color: ${({ theme }) => theme.colors.greeting};
 `;
 
@@ -57,10 +58,15 @@ export const TypedText = styled.h1`
   font-weight: 700;
   line-height: 1.2;
   margin: 10px 0 12px;
+  text-align: center;
   
   &:after {
     content: "|";
     animation: ${blink} 1s step-start infinite;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.medium}) {
+    font-size: 32px;
   }
 `;
 
@@ -96,4 +102,5 @@ export const HomeButton = styled.a`
 export const SocialMediaBlock = styled.ul`
     margin: 0;
     list-style: none;
+    padding: 0;
 `;
