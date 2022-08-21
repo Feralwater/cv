@@ -7,7 +7,8 @@ export const AboutBlock = styled.section`
   width: 100%;
   box-sizing: border-box;
   padding: 50px 20px 50px 308px;
-
+  overflow-x: hidden;
+  
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
     padding: 50px 20px;
   }
