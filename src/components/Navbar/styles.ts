@@ -22,6 +22,8 @@ export const NavBar = styled.div<NavbarProps>`
 
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
     transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(-100%)')};
+    width: 250px;
+    font-size: 14px;
   }
 `;
 
