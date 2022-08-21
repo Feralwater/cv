@@ -6,6 +6,7 @@ import Navbar from 'components/Navbar';
 import Contacts from 'Pages/Contacts';
 import Portfolio from 'Pages/Portfolio';
 import Service from 'Pages/Service';
+import Header from 'components/Header';
 import Home from './Pages/Home';
 import Cursor from './components/Cursor';
 import About from './Pages/About';
@@ -17,6 +18,7 @@ function App() {
   return (
     <ThemeProvider theme={theme[globalTheme]}>
       <ThemeSwitcher handleChange={handleChangeTheme} />
+      <Header />
       <Navbar />
       <Home />
       <About />

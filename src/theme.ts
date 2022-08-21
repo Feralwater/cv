@@ -49,13 +49,14 @@ export const baseTheme = {
 
   shadows: {
     rightShadow: '0 3px 5px rgb(0 0 0 / 10%)',
+    headerShadow: '0 8px 24px rgb(149 157 165 / 20%)',
   },
 
   media: {
-    extraLarge: '(max-width: 1140px)',
-    large: '(max-width: 960px)',
-    medium: '(max-width: 720px)',
-    small: '(max-width: 540px)',
+    extraLarge: '1199px',
+    large: '960px',
+    medium: '720px',
+    small: '540px',
   },
 };
 
@@ -81,6 +82,7 @@ export const LightTheme: DefaultTheme = {
     timeBackground: `${baseTheme.colors.amour}`,
     symbol: `${baseTheme.colors.gravel}`,
     modalTitle: `${baseTheme.colors.midnight}`,
+    header: `${baseTheme.colors.white}`,
   },
   borders: {
     ...baseTheme.borders,
@@ -116,6 +118,7 @@ export const DarkTheme: DefaultTheme = {
     timeBackground: `${baseTheme.colors.rhino}`,
     symbol: `${baseTheme.colors.amour}`,
     modalTitle: `${baseTheme.colors.white}`,
+    header: `${baseTheme.colors.rhino}`,
   },
   borders: {
     ...baseTheme.borders,
