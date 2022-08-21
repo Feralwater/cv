@@ -7,12 +7,19 @@ export const Card = styled(motion.div)`
   padding: 35px 35px 48px 35px;
   border-radius: 6px;
   gap: 15px;
-  min-width: fit-content;
-  flex: 0 1 30%;
+  min-width: 328px;
+  min-height: 135px;
+  flex: 1 0 calc(33.333% - 20px);
   overflow: hidden;
   box-sizing: border-box;
   box-shadow: ${({ theme }) => theme.shadows.rightShadow};
   transition: all 0.7s ease-in-out;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    padding: 20px;
+    min-width: 300px;
+    font-size: 14px;
+  }
 `;
 
 export const Icon = styled.div`
@@ -24,7 +31,7 @@ export const Icon = styled.div`
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  
+
   & svg {
     width: 25px;
     height: 25px;

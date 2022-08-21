@@ -17,16 +17,26 @@ export const ContactCards = styled.div`
   padding-top: 50px;
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  @media (max-width: ${({ theme }) => theme.media.medium}) {
+    flex-direction: column;
+  }
 `;
 
 export const MailAuthor = styled.div`
   display: flex;
   width: 100%;
   gap: 60px;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    flex-direction: column;
+    align-items: baseline;
+  }
 `;
 
 export const MailMe = styled(motion.div)`
   flex: 1 1 50%;
-  transition:  all 0.7s ease-in-out 1s;
+  transition: all 0.7s ease-in-out 1s;
 `;
