@@ -18,6 +18,10 @@ export const Ring = styled.div<IRing>`
   z-index: 99999;
   pointer-events: none;
   transition: all .7s ease-in-out 0s;
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    display: none;
+  }
 `;
 
 export const Dot = styled.div`
@@ -31,4 +35,8 @@ export const Dot = styled.div`
   transform: translate(-50%, -50%);
   z-index: 99999;
   pointer-events: none;
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    display: none;
+  }
 `;
