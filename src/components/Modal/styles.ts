@@ -64,6 +64,11 @@ export const CloseButton = styled.button`
     filter: invert(1);
   }
 
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    right: -15px;
+    top: -50px;
+  }
+  
   @media (max-width: ${({ theme }) => theme.media.medium}) {
     display: none;
   }

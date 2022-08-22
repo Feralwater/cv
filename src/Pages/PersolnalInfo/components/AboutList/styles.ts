@@ -5,6 +5,10 @@ export const AboutListWrapper = styled.ul`
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
+
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+    flex-direction: column;
+  }
 `;
 
 export const AboutItem = styled.li`
@@ -12,6 +16,11 @@ export const AboutItem = styled.li`
   max-width: 50%;
   font-size: 16px;
   padding-bottom: 20px;
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
 `;
 
 export const AboutTitle = styled.span`

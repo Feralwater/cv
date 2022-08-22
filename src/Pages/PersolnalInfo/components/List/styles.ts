@@ -19,6 +19,11 @@ export const ListItem = styled.li`
     bottom: 0;
     border-left: ${({ theme }) => theme.borders.listBorder};
   }
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    padding: 0 15px 0 30px;
+    margin: 0 0 30px;
+  }
 `;
 
 export const Icon = styled.div`
@@ -58,6 +63,10 @@ export const ItemTitle = styled.h5`
   color: ${({ theme }) => theme.colors.popupItem};
   font-weight: 600;
   line-height: 1.5;
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    font-size: 16px;
+  }
 `;
 
 export const Place = styled.h5`
@@ -75,7 +84,8 @@ export const Place = styled.h5`
     height: 2px;
     background-color: ${({ theme }) => theme.colors.symbol};
     left: 7px;
-    top: 9px;
+    top: 50%;
+    transform: translateY(-50%);
     opacity: .8;
   }
 `;

@@ -2,11 +2,25 @@ import styled from 'styled-components';
 
 export const Popup = styled.div`
   width: 970px;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    width: 800px;
+  }
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+    width: 500px;
+  }
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    width: 260px;
+  }
 `;
 
 export const PopupRow = styled.div`
   display: flex;
   gap: 30px;
+
+  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+    flex-direction: column;
+  }
 `;
 
 export const Column = styled.div`
@@ -20,6 +34,10 @@ export const PopupHeader = styled.h3`
   padding-bottom: 10px;
   display: inline-block;
   color: ${({ theme }) => theme.colors.font};
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    font-size: 20px;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -43,5 +61,9 @@ export const DownloadButton = styled.a`
     background-color: ${({ theme }) => theme.colors.font};
     color: ${({ theme }) => theme.colors.buttonHoverColor};
     border-color: ${({ theme }) => theme.colors.font};
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    font-size: 16px;
   }
 `;

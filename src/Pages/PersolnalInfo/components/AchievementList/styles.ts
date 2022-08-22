@@ -15,6 +15,11 @@ export const Achievement = styled.div`
   min-width: 220px;
   border-radius: 5px;
   border: ${({ theme }) => theme.borders.navbarBorder};
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    padding: 10px 30px;
+    min-width: 260px;
+  }
 `;
 
 export const AchievementTitle = styled.h3`
@@ -35,6 +40,11 @@ export const AchievementTitle = styled.h3`
     font-weight: 300;
     top: 2px;
   }
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    font-size: 35px;
+    &:after {
+      font-size: 23px;
+    }
   }
 `;
 
