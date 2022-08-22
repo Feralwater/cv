@@ -1,27 +1,24 @@
 import styled from 'styled-components';
 
 export const BannerWrapper = styled.div`
-  height: 450px;
-  width: 950px;
+  width: 100%;
   background-color: ${({ theme }) => theme.colors.amour};
   border-radius: 6px;
   max-height: 450px;
   margin-bottom: 50px;
   overflow: hidden;
   box-sizing: border-box;
+  font-size: 0;
 
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
-    height: 300px;
-    width: 550px;
+    max-height: 300px;
   }
   @media (max-width: ${({ theme }) => theme.media.medium}) {
-    height: 250px;
-    width: 500px;
+    max-height: 250px;
     margin-bottom: 30px;
   }
   @media (max-width: ${({ theme }) => theme.media.small}) {
-    height: 150px;
-    width: 250px;
+    max-height: 150px;
   }
 `;
 
