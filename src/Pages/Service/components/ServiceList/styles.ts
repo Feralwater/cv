@@ -8,4 +8,8 @@ export const List = styled.ul`
   flex-wrap: wrap;
   gap: 30px;
   box-sizing: border-box;
+
+  @media (max-width: ${({ theme }) => theme.media.medium}) {
+    padding: 0;
+  }
 `;

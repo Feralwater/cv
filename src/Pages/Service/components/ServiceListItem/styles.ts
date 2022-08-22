@@ -20,6 +20,10 @@ export const ItemInnerHeader = styled.h3`
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 20px;
+  
+  @media (max-width: ${({ theme }) => theme.media.medium}) {
+    font-size: 22px;
+  }
 `;
 
 export const RightArrow = styled.span`
@@ -65,10 +69,11 @@ export const ItemInner = styled(motion.li)`
   padding: 50px 40px 45px 50px;
   border-radius: 6px;
   box-sizing: border-box;
-  flex: 0 0 calc(25% - 30px);
+  flex: 1 1 calc(25% - 30px);
   cursor: pointer;
   word-wrap: break-word;
-  width: calc(25% - 30px);
+  width: 100%;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
