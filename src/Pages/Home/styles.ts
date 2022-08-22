@@ -21,6 +21,7 @@ export const HomeWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 30px 0 0 0;
 `;
 
 export const HomeImageWrapper = styled.div`

@@ -8,7 +8,6 @@ interface NavbarProps {
 
 export const NavBar = styled.div<NavbarProps>`
   width: 288px;
-  height: 100vh;
   background-color: ${({ theme }) => theme.colors.sidebarBackground};
   color: ${({ theme }) => theme.colors.font};
   display: flex;
