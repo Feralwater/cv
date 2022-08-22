@@ -11,13 +11,20 @@ export const BannerWrapper = styled.div`
   font-size: 0;
 
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
-    max-height: 300px;
+    min-width: 850px;
+    max-height: 450px;
+  }
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+    min-width: 600px;
+    max-height: 250px;
   }
   @media (max-width: ${({ theme }) => theme.media.medium}) {
+    min-width: 500px;
     max-height: 250px;
     margin-bottom: 30px;
   }
   @media (max-width: ${({ theme }) => theme.media.small}) {
+    min-width: 260px;
     max-height: 150px;
   }
 `;

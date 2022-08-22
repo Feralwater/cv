@@ -7,9 +7,9 @@ export const Card = styled(motion.div)`
   padding: 35px 35px 48px 35px;
   border-radius: 6px;
   gap: 15px;
-  min-width: 328px;
+  min-width: 286px;
   min-height: 135px;
-  flex: 1 0 calc(33.333% - 20px);
+  flex: 1 1 calc(33.333% - 20px);
   overflow: hidden;
   box-sizing: border-box;
   box-shadow: ${({ theme }) => theme.shadows.rightShadow};
@@ -17,8 +17,6 @@ export const Card = styled(motion.div)`
 
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
     padding: 25px 10px;
-    min-width: 280px;
-    max-width: 280px;
     font-size: 10px;
   }
 `;
