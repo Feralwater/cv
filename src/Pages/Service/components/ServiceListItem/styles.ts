@@ -73,7 +73,7 @@ export const ItemInner = styled(motion.li)`
   cursor: pointer;
   word-wrap: break-word;
   width: 100%;
-  min-width: 260px;
+  min-width: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
