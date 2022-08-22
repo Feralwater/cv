@@ -8,4 +8,7 @@ export const StyledParagraph = styled.p`
   @media (max-width: ${({ theme }) => theme.media.medium}) {
     font-size: 16px;
   }
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    font-size: 12px;
+  }
 `;

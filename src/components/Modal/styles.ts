@@ -26,6 +26,10 @@ export const ModalContent = styled.div`
     background-color: #7e7e7e;
     border-radius: 6px;
   }
+
+  @media (max-width: ${({ theme }) => theme.media.medium}) {
+   padding: 20px;
+  }
 `;
 
 export const ModalWrapper = styled.div`
@@ -58,5 +62,9 @@ export const CloseButton = styled.button`
     width: 45px;
     height: 45px;
     filter: invert(1);
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.medium}) {
+    display: none;
   }
 `;
