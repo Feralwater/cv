@@ -1,6 +1,5 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
-// eslint-disable-next-line import/no-unresolved
 import 'swiper/css';
 import { Navigation } from 'swiper';
 import { ProjectLink, StyledSwiper } from './styles';
@@ -9,17 +8,23 @@ import { PORTFOLIO } from './constants';
 export default function PortfolioSwiper() {
   return (
     <StyledSwiper
-      slidesPerView={3}
       spaceBetween={30}
       slidesPerGroup={2}
       loop
       loopFillGroupWithBlank
-      pagination={{
-        clickable: true,
-      }}
       navigation
       modules={[Navigation]}
-      className="mySwiper"
+      breakpoints={{
+        960: {
+          slidesPerView: 3,
+        },
+        540: {
+          slidesPerView: 2,
+        },
+        0: {
+          slidesPerView: 1,
+        },
+      }}
     >
       {
             PORTFOLIO.map(({

@@ -51,6 +51,10 @@ export const ProjectLink = styled.a<IProjectLink>`
   height: 350px;
   border-radius: 10px;
 
+  @media (max-width: ${({ theme }) => theme.media.medium}) {
+   height: 270px;
+  }
+
   &:after {
     content: '';
     display: flex;
