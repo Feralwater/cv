@@ -16,9 +16,10 @@ export const Card = styled(motion.div)`
   transition: all 0.7s ease-in-out;
 
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
-    padding: 20px;
-    min-width: 300px;
-    font-size: 14px;
+    padding: 25px 10px;
+    min-width: 280px;
+    max-width: 280px;
+    font-size: 10px;
   }
 `;
 

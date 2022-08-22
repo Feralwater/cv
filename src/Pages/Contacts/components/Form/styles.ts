@@ -7,6 +7,11 @@ export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 25px;
+
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+    gap: 10px;
+    padding: 20px 35px 45px 35px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -14,6 +19,10 @@ export const Title = styled.h3`
   font-size: 20px;
   font-weight: 600;
   margin: 0 0 15px 0;
+
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+    font-size: 16px;
+  }
 `;
 
 export const Textarea = styled.textarea`
@@ -43,6 +52,10 @@ export const ButtonContainer = styled.div`
    
   & button {
     padding: 11px 33px;
+
+    @media (max-width: ${({ theme }) => theme.media.large}) {
+      padding: 6px 26px;
+    }
   }
 `;
 
@@ -54,5 +67,9 @@ export const ErrorMessage = styled.span`
   
   &:first-letter {
     text-transform: uppercase;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+   font-size: 12px;
   }
 `;

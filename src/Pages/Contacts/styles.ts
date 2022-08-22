@@ -8,7 +8,7 @@ export const ContactsBlock = styled.section`
   box-sizing: border-box;
   padding: 50px 20px 50px 308px;
   overflow-x: hidden;
-  
+
   @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
     padding: 50px 20px;
   }
@@ -31,13 +31,19 @@ export const MailAuthor = styled.div`
   width: 100%;
   gap: 60px;
 
-  @media (max-width: ${({ theme }) => theme.media.extraLarge}) {
+  @media (max-width: ${({ theme }) => theme.media.large}) {
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
   }
 `;
 
 export const MailMe = styled(motion.div)`
   flex: 1 1 50%;
   transition: all 0.7s ease-in-out 1s;
+
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+    width: 100%;
+  }
 `;

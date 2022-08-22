@@ -10,4 +10,8 @@ export const Map = styled(motion.div)`
     border: ${({ theme }) => theme.borders.mapBorder};
     filter: ${({ theme }) => (theme.theme === 'light' ? 'grayscale(1)' : 'invert(1)')};
   }
+
+  @media (max-width: ${({ theme }) => theme.media.large}) {
+    width: 100%;
+  }
 `;
