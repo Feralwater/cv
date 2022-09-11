@@ -7,7 +7,7 @@ export const CONTACTS = [
   {
     name: 'Phone',
     icon: <BsTelephone />,
-    contacts: ['+375 (29) 224-48-84', '+(995) 591-920-551'],
+    contacts: ['+(48) 500 468 249', '+(995) 591-920-551'],
   },
   {
     name: 'Email',
@@ -17,6 +17,6 @@ export const CONTACTS = [
   {
     name: 'Address',
     icon: <FiMapPin />,
-    contacts: ['S. Tsintsadse St,', 'Tbilisi, Georgia'],
+    contacts: ['Marszałkowska St,', 'Warsaw, Poland'],
   },
 ];

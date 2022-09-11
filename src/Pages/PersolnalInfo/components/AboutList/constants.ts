@@ -21,11 +21,11 @@ export const INFO = [
   },
   {
     title: 'Address: ',
-    value: 'Tbilisi',
+    value: 'Warsaw',
   },
   {
     title: 'Phone: ',
-    value: '+995591920551',
+    value: '+48 500 468 249',
   },
   {
     title: 'Email: ',
