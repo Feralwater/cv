@@ -12,7 +12,7 @@ export const CONTACTS = [
   {
     name: 'Email',
     icon: <HiOutlineMailOpen />,
-    contacts: ['lineviktoriya@gmail.com'],
+    contacts: ['victoria.buyakova@gmail.com'],
   },
   {
     name: 'Address',

@@ -29,7 +29,7 @@ export const INFO = [
   },
   {
     title: 'Email: ',
-    value: 'lineviktoriya@gmail.com',
+    value: 'victoria.buyakova@gmail.com',
   },
   {
     title: 'Skype: ',
